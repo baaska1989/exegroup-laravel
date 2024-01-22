@@ -12,9 +12,18 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import Vue3Lottie from "vue3-lottie";
 import { createI18n } from 'vue-i18n';
+import en from "./locales/en.js";
+import cn from "./locales/cn.js";
+import jp from "./locales/jp.js";
+
+
 const i18n = createI18n({
-    // something vue-i18n options here ...
-  })
+    fallbackLocale: "jp", 
+    locale: localStorage.getItem("locale") ?? "en",
+    messages: {en, jp, cn},
+    legacy: false 
+  });
+
 createApp(App)
     .use(router)
     .use(store)

@@ -1,84 +1,137 @@
 <template>
-    <header class="border-b-gray" style="border-bottom: 1px solid #eee;">
-        <nav
-            class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white border-b-indigo-500"
+    <nav
+        class="relative flex flex-wrap items-center justify-start py-3"
+        style="background-color: #0e1447"
+    >
+        <div
+            class="container pl-8 mx-auto flex flex-wrap items-center justify-start ml-0"
         >
-            <div>
-                <!-- <img src="/assets/logo.png" class="w-48"/> -->
-               <a href="/">
-                    <img src="/assets/logo_black.png" class="w-48 py-2 md:ml-8"/>
-             
-                </a> 
-            </div>
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                id="menu-button"
-                class="h-6 w-6 cursor-pointer md:hidden block"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                />
-            </svg>
-
             <div
-                class="hidden w-full md:flex md:items-center md:w-auto "
-                id="menu"
+                class="w-full relative flex justify-start lg:w-auto lg:static lg:block"
+            >
+                <a
+                    class="font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-white"
+                    href="/"
+                    ><div>
+                        <img
+                            src="/assets/exe-logo.png"
+                            loading="lazy"
+                            class="w-28 px-2 transition duration-300 ease-linear align-middle"
+                        /></div></a
+                ><button
+                    class="flex flex-grow justify-end items-center text-white font-light cursor-pointer text-4xl lg:hidden outline-none focus:outline-none"
+                    type="button"
+                >
+                    <i
+                        class="fas fa-bars sm:mr-4 md:mr-8 lg:mr-0"
+                        style="margin-right: -80px; margin-top: -5px"
+                    ></i>
+                </button>
+            </div>
+            <div
+                class="lg:flex flex-grow lg:flex-none items-center hidden"
+                id="example-navbar-danger"
             >
                 <ul
-                    class="pt-4 text-base text-gray-700 md:flex md:text-center md:justify-between md:pt-0"
+                    class="flex flex-col lg:flex-row list-none lg:ml-auto justify-start"
                 >
-                    <li>
-                        <router-link :to="{name: 'AboutUs'}"
-                            class="md:p-4 py-2 block text-sky-700 hover:text-sky-900"
-                            
-                            >About Us</router-link
+                    <li class="nav-item">
+                        <a
+                            class="px-3 py-2 flex items-center text-sm uppercase leading-snug text-white hover:text-sky-300"
+                            href="/"
+                            ><span class="ml-2">{{ $t("home") }}</span></a
                         >
                     </li>
-                    <li>
-                        <router-link :to="{name: 'HospitalWelness'}"
-                            class="md:p-4 py-2 block text-sky-700 hover:text-sky-900"
-                            >Hospitality Welness</router-link
+                    <div class="flex justify-start px-2">
+                        <div>
+                            <div class="dropdown relative">
+                                <a
+                                    class="px-1 py-2 flex items-center text-sm uppercase leading-snug text-white hover:text-sky-300"
+                                    href="/about/"
+                                    ><span class="ml-2">{{ $t("about") }}</span></a
+                                >
+                                <ul
+                                    class="dropdown-menu min-w-max absolute bg-darkblue text-base z-50 float-left py-2 list-none text-left shadow-lg mt-1 hidden bg-clip-padding border-none"
+                                    aria-labelledby="dropdownMenuButton1tx"
+                                >
+                                    <li>
+                                        <a
+                                            class="dropdown-item px-12 text-sm py-2 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 bg-darkblue"
+                                            href="/greetings/"
+                                            >社長メッセージ</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item px-12 text-sm py-2 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                                            href="/corporate/"
+                                            >会社概要</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <li class="nav-item">
+                            <div class="flex justify-center">
+                                <div class="dropdown -ml-8 md:ml-0">
+                                    <span
+                                        class="flex items-center md:px-6 pt-2.5 pb-2 text-sm font-medium uppercase leading-normal text-white -mt-0.5"
+                                        >海外プロジェクト</span
+                                    >
+                                    <div
+                                        class="dropdown-content text-left text-white p-2"
+                                    >
+                                        <a href="/myanmar/">ミャンマー</a
+                                        ><br /><a href="/mongolia/">モンゴル</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a
+                            class="px-3 py-2 flex items-center text-sm uppercase leading-snug text-white hover:text-sky-300"
+                            href="/domestic/"
+                            ><span class="ml-2">国内プロジェクト</span></a
                         >
                     </li>
-                    <li>
-                        <router-link
-                            class="md:p-4 py-2 block text-sky-700 hover:text-sky-900"
-                           :to="{name: 'Events'}"
-                            >Events</router-link
-                        >
-                    </li>
-                    <li>
-                        <router-link
-                            class="md:p-4 py-2 text-sky-700 block hover:text-sky-900"
-                            :to="{name: 'NewsCommunity'}"
-                            >News & Community</router-link
-                        >
-                    </li>
-                    <li>
-                        <router-link
-                            class="md:p-4 py-2 block text-sky-700 hover:text-sky-900"
-                            :to="{name: 'OptimizedLiving'}"
-                            >Optimized Living</router-link
-                        >
-                    </li>
-                    <li>
-                        <button
-                            class="md:py-1 rounded-5 md:px-2 p-1 md:mt-3 ml-5 block text-whitec flex items-center font-medium text-white bg-sky-800/90 hover:bg-sky-600 transition-all duration-500"
-                            href="#"
-                            >Book a Session</button
+                    <div class="flex justify-center">
+                        <li class="nav-item1">
+                            <div class="flex justify-center">
+                                <div class="dropdown text-white">
+                                    <span
+                                        class="flex items-center bg-darkblue lg:px-6 px-4 pt-2.5 pb-2 text-sm font-medium uppercase leading-normal text-white -mt-0.5"
+                                        >インターンシップ・採用</span
+                                    >
+                                    <div
+                                        class="dropdown-content text-left flex-col"
+                                        style="
+                                            min-width: 200px;
+                                            padding-left: 10px;
+                                        "
+                                    >
+                                        <a href="/intership/"
+                                            >インターンシップ</a
+                                        >
+                                        <br /><a href="/recruit/">リクルート</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <li class="nav-item">
+                        <a
+                            class="px-2 py-2 flex items-center text-sm uppercase leading-snug text-white hover:text-sky-300"
+                            href="/contact/"
+                            ><span class="ml-2">お問い合わせ</span></a
                         >
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 </template>
 
 <script>
