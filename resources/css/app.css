@@ -1,0 +1,79 @@
+/*
+ |--------------------------------------------------------------------------
+ | TailwindCSS Directives
+ |--------------------------------------------------------------------------
+ |
+ | Import TailwindCSS directives and swipe out at build-time with all of
+ | the styles it generates based on your configured design system.
+ |
+ | Please check this link for more details:
+ | https://tailwindcss.com/docs/installation#include-tailwind-in-your-css
+ |
+ */
+@import "_tailwind.css";
+@import "_public-sans.css";
+@import "simplebar/src/simplebar.css";
+@import "dropzone/dist/dropzone.css";
+@import "tabulator-tables/dist/css/tabulator.css";
+@import "tom-select/dist/css/tom-select.css";
+@import "zoom-vanilla.js/dist/zoom.css";
+@import "toastify-js/src/toastify.css";
+@import "highlight.js/styles/github.css";
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/themes/light.css";
+@import "tippy.js/dist/svg-arrow.css";
+@import "tippy.js/animations/shift-away.css";
+@import "tiny-slider/dist/tiny-slider.css";
+@import "leaflet/dist/leaflet.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+@import "./components/_global.css";
+@import "./components/_side-nav.css";
+@import "./components/_mobile-menu.css";
+@import "./components/_top-nav.css";
+@import "./components/_intro.css";
+@import "./components/_zoom-in.css";
+@import "./components/_image-fit.css";
+@import "./components/_typing-dots.css";
+@import "./components/_scrollbar-hidden.css";
+@import "./components/_box.css";
+@import "./components/_tiny-slider.css";
+@import "./components/_tippy.css";
+@import "./components/_toastify.css";
+@import "./components/_zoom-vanilla.css";
+@import "./components/_tom-select.css";
+@import "./components/_ckeditor.css";
+@import "./components/_litepicker.css";
+@import "./components/_full-calendar.css";
+@import "./components/_tabulator.css";
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(var(--color-primary) / 1) !important;
+    font-family: "Montserrat" sans-serif;
+}
+
+ html body {
+    background-color: #fff !important;
+    padding: 0 !important;
+    font-family: "Montserrat" sans-serif !important;
+ }
+body {
+    /* background-color: #fff !important; */
+    padding: 0 !important;
+    font-family: "Montserrat" sans-serif !important;
+ }
+
+ .active-class{
+   color: #202e32 !important;
+   padding-bottom: 1px;
+ }
+ .active-class:after {
+    content:"";
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    display:inline-block;
+    width:22px;
+    margin-left:-11px;
+    border-bottom:red dashed 1px;
+}
