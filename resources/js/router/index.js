@@ -13,15 +13,18 @@ import Event from "../pages/admin/Event.vue";
 // Web Pages
 import Home from "../pages/Home.vue";
 import AboutUs from "../pages/web/AboutUs.vue";
-import HospitalWelness from "../pages/web/HospitalWelness.vue";
-import Events from "../pages/web/Events.vue";
-import NewsCommunity from "../pages/web/NewsCommunity.vue";
-import OptimizedLiving from "../pages/web/OptimizedLiving.vue";
+import Domestic from "../pages/web/Domestic.vue";
+import Contact from "../pages/web/Contact.vue";
+import Mongolia from "../pages/web/Mongolia.vue";
+import Myanmar from "../pages/web/Myanmar.vue";
+import Internship from "../pages/web/Internship.vue";
+import Recruit from "../pages/web/Recruit.vue";
+
 
 import MainLayout from "../layouts/MainLayout.vue";
-import IntroCard from "../pages/admin/IntroCard.vue"
-import Optimized from "../pages/admin/Optimized.vue"
-import Clients from "../pages/admin/Clients.vue"
+import IntroCard from "../pages/admin/IntroCard.vue";
+import Optimized from "../pages/admin/Optimized.vue";
+import Clients from "../pages/admin/Clients.vue";
 import NotFound from "../pages/NotFound.vue";
 
 const router = createRouter({
@@ -46,31 +49,44 @@ const router = createRouter({
                     meta: { openAlways: true },
                 },
                 {
-                    path: "/hospital-welness",
-                    name: "HospitalWelness",
-                    component: HospitalWelness,
+                    path: "/contact",
+                    name: "Contact",
+                    component: Contact,
                     meta: { openAlways: true },
                 },
                 {
-                    path: "/events",
-                    name: "Events",
-                    component: Events,
+                    path: "/myanmar",
+                    name: "Myanmar",
+                    component: Myanmar,
                     meta: { openAlways: true },
                 },
                 {
-                    path: "/news-community",
-                    name: "NewsCommunity",
-                    component: NewsCommunity,
+                    path: "/mongolia",
+                    name: "Mongolia",
+                    component: Mongolia,
                     meta: { openAlways: true },
                 },
                 {
-                    path: "/optimized-living",
-                    name: "OptimizedLiving",
-                    component: OptimizedLiving,
+                    path: "/domestic",
+                    name: "Domestic",
+                    component: Domestic,
                     meta: { openAlways: true },
                 },
+                {
+                    path: "/internship",
+                    name: "Internship",
+                    component: Internship,
+                    meta: { openAlways: true },
+                },
+                {
+                    path: "/recruit",
+                    name: "Recruit",
+                    component: Recruit,
+                    meta: { openAlways: true },
+                }
             ],
         },
+        
         {
             path: "/admin/login/",
             component: LoginLayout,
@@ -145,6 +161,7 @@ const router = createRouter({
                 },
             ],
         },
+
         {
             path: "/:catchAll(.*)",
             redirect: {
@@ -160,7 +177,9 @@ router.beforeEach((to, from, next) => {
     store.dispatch("SET_ROUTE_NAME", to);
     store.dispatch("AUTH_CHECK").then(function () {
         if (to.meta.openAlways){
-            next();
+            next(() => {
+                document.title = to.meta.title;
+            });
         } else {
             if (store.getters.isLoggedIn){
                 if (to.meta.requiresAuth) {

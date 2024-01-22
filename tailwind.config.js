@@ -2,7 +2,6 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 const { parseColor } = require("tailwindcss/lib/util/color");
 
-
 const toRGB = (value) => {
     return parseColor(value).color.join(" ");
 };
@@ -20,8 +19,25 @@ export default {
     ],
     darkMode: "class",
     theme: {
+        fontFamily: {
+            sans: ["Montserrat"],
+            serif: ["Merriweather", "serif"],
+          },
         extend: {
+            // colors: {
+            //     darkblue: "#0e1448",
+            //     primary: "#4e5152",
+            //     green: "#4e5",
+            // },
+            spacing: {
+                128: "32rem",
+                144: "36rem",
+            },
+            borderRadius: {
+                "4xl": "2rem",
+            },
             colors: {
+                darkblue: "#0e1448",
                 primary: "rgb(var(--color-primary) / <alpha-value>)",
                 secondary: "rgb(var(--color-secondary) / <alpha-value>)",
                 success: "rgb(var(--color-success) / <alpha-value>)",
@@ -246,4 +262,3 @@ export default {
         },
     },
 };
-

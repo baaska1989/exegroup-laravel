@@ -16,7 +16,7 @@
 <!--                            class="w-6"-->
 <!--                            :src="logoUrl"-->
 <!--                        />-->
-                        <span class="ml-3 text-lg text-white"> Breathrise </span>
+                        <span class="ml-3 text-lg text-white"> EXE GROUP </span>
                     </a>
                     <div class="my-auto">
 <!--                        <img-->

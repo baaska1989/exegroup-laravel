@@ -63,17 +63,10 @@ body {
     font-family: "Montserrat" sans-serif !important;
  }
 
- .active-class{
-   color: #202e32 !important;
+ .active .active-class{
+  color: #2d8cf0 !important;
    padding-bottom: 1px;
  }
- .active-class:after {
-    content:"";
-    position:absolute;
-    bottom:10px;
-    left:50%;
-    display:inline-block;
-    width:22px;
-    margin-left:-11px;
-    border-bottom:red dashed 1px;
+ .font-sans {
+  font-family: "Montserrat" sans-serif !important;
 }
