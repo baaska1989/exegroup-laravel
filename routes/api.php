@@ -10,6 +10,7 @@ use App\Http\Controllers\AccountController;
 use App\Http\Controllers\TeacherController;
 
 
+
 Route::group(['as' => 'api.'], function ()
 {
     //Auth

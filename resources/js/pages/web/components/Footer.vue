@@ -225,7 +225,9 @@
             >
                 <div style="vertical-align: inherit"
                     ><div style="vertical-align: inherit"
-                        >{{ $t("footer.copyRight") }}</div
+                        >
+                        {{ $t("footer.copyRight") }} 
+                        </div
                     ></div
                 >
             </div>

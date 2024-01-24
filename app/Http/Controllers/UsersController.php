@@ -28,6 +28,8 @@ class UsersController extends Controller
 
     public function getUsers()
     {
+        // dd(env('DB_DATABASE'));
+        // dd(\Config::get('app.key'));
         try {
             $status = true;
             $data = DB::table('users')->limit(100)->orderBy('id', 'desc')->get();

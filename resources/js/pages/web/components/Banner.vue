@@ -66,7 +66,7 @@
         </div>
     </div>
     
-    <section class="section h-screen bg-white" id="home">
+    <!-- <section class="section h-screen bg-white" id="home">
         <Vue3Lottie
             style="position: absolute"
             ref="customControl"
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </template>
 
 <script>

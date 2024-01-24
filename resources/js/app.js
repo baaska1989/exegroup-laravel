@@ -1,6 +1,5 @@
-
 import './bootstrap';
-import { createApp } from 'vue'
+import { createApp } from 'vue';
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
@@ -18,10 +17,10 @@ import jp from "./locales/jp.js";
 
 
 const i18n = createI18n({
-    fallbackLocale: "jp", 
+    fallbackLocale: "jp",
     locale: localStorage.getItem("locale") ?? "jp",
     messages: {jp, en, cn},
-    legacy: false 
+    legacy: false
   });
 
 createApp(App)

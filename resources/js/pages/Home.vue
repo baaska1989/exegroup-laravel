@@ -145,9 +145,9 @@
             </div>
         </div>
     </div>
-    <Introducting />
+    <!-- <Introducting />
     <Transformational />
-    <Breathwork />
+    <Breathwork /> -->
 </template>
 
 <script>
