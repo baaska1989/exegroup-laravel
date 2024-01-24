@@ -6,6 +6,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Exe Group') }}</title>
     <link href="/images/icon.ico" rel="icon" type="image/ico" sizes="16x16" />
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>

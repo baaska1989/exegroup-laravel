@@ -22,7 +22,7 @@ export default {
         fontFamily: {
             sans: ["Montserrat"],
             serif: ["Merriweather", "serif"],
-          },
+        },
         extend: {
             // colors: {
             //     darkblue: "#0e1448",
@@ -60,6 +60,7 @@ export default {
                     900: "rgb(var(--color-darkmode-900) / <alpha-value>)",
                 },
             },
+
             fontWeight: {
                 normal: "500",
                 medium: "600",
@@ -67,6 +68,8 @@ export default {
             },
             fontFamily: {
                 "public-sans": ["Public Sans"],
+                sans: ["Inter", "sans"],
+                serif: ["Merriweather", "serif"],
             },
             container: {
                 center: true,

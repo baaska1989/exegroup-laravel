@@ -1,7 +1,8 @@
 <template>
     <div
         class="relative overflow-hidden bg-cover bg-no-repeat h-[16rem] md:h-[20rem] lg:h-[28rem]"
-        style="margin-top: 120px;
+        style="
+            margin-top: 120px;
             background-position: 50% center;
             background-image: url('/assets/img/grand.jpg');
         "
@@ -200,7 +201,6 @@
                     src="/assets/img/border.png"
                     alt=""
                     class="mx-auto max-w-2xl w-[95%]"
-                    loading="lazy "
                 />
             </div>
             <div class="md:flex grid grid-cols-1 md:grid-cols-2 mt-4 md:ml-16">
@@ -250,8 +250,9 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path>
+                                    </svg>
+                                </span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -281,8 +282,7 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path></svg></span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -312,8 +312,7 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path></svg></span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -343,8 +342,7 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path></svg></span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -374,8 +372,7 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path></svg></span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -407,8 +404,7 @@
                                             fill-rule="evenodd"
                                             d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                             clip-rule="evenodd"
-                                        ></path></svg
-                                ></span>
+                                        ></path></svg></span>
                             </button>
                             <div class="overflow-hidden" style="height: 0px">
                                 <div
@@ -438,12 +434,37 @@
             </div>
         </div>
     </div>
+    <vue-collapsible-panel-group>
+    <vue-collapsible-panel>
+        <template #title>
+            Panel A Title
+        </template>
+        <template #content>
+            Panel A Content
+        </template>
+    </vue-collapsible-panel>
+    <vue-collapsible-panel>
+        <template #title>
+            Panel B Title
+        </template>
+        <template #content>
+            Panel B Content
+        </template>
+    </vue-collapsible-panel>
+</vue-collapsible-panel-group>
 </template>
-
 <script>
-export default {
-    data() {
-        return {};
-    },
-};
+    import {
+        VueCollapsiblePanelGroup,
+        VueCollapsiblePanel,
+    } from "@dafcoe/vue-collapsible-panel";
+    import "@dafcoe/vue-collapsible-panel/dist/vue-collapsible-panel.css";
+    export default {
+        data() {
+            return {};
+        },
+    };
 </script>
+
+<style lang="scss"></style>
+
