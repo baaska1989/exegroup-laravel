@@ -42,36 +42,36 @@
                             <h2
                                 class="text-2xl md:text-3xl text-gray-700 font-bold"
                             >
-                                不動産流動化事業
+                                {{$t("domesticPage.title1")}}
                             </h2>
                             <p
                                 class="text-lg font-medium text-gray-500 text-justify mt-4 font-sans text-gray-500 text-justify"
                             >
-                                主に都心エリアを対象に、エリアマーケットやニーズに合わせてバリューアップを行うことで、その不動産の価値を最大限まで引き上げる事業を行っています。取得から、リノベーション、リーシング、プロパティマネジメント、売却までをトータルに行います。
+                            {{$t("domesticPage.text1")}}
                             </p>
                         </div>
                         <div class="w-full md:mx-8 py-4">
                             <h2
                                 class="text-2xl md:text-3xl text-gray-700 font-bold"
                             >
-                                不動産賃貸事業
+                            {{$t("domesticPage.title2")}}
                             </h2>
                             <p
                                 class="text-lg font-medium text-gray-500 text-justify mt-6 font-sans text-gray-500 text-justify"
                             >
-                                都心を中心にレジデンスビル、商業ビル、パーキングなどを保有し、様々なノウハウで高稼働を維持しながら賃貸を行うことで、安定的な収益をあげています。また、デザイン性に優れたリノベーションを行ったシェアハウス、ゲストハウス事業にも力を入れており、国内外の学生、単身者向けに新たなライフスタイルの空間提供を行っています。
+                            {{$t("domesticPage.text2")}}
                             </p>
                         </div>
                         <div class="w-full md:mx-8 py-4">
                             <h2
                                 class="text-2xl md:text-3xl text-gray-700 font-bold"
                             >
-                                不動産投資事業
+                            {{$t("domesticPage.title3")}}
                             </h2>
                             <p
                                 class="text-lg font-medium text-gray-500 text-justify mt-6 font-sans text-gray-500 text-justify"
                             >
-                                不動産担保付債券の取得や不動産保有会社のM&amp;Aなどを行っています。マーケットの変化を見逃すことなく、不動産と金融を融合させた新たな投資事業にも積極的に取り組んでいます。
+                            {{$t("domesticPage.text3")}}
                             </p>
                         </div>
                     </div>
@@ -82,21 +82,21 @@
             <div
                 class="text-2xl md:text-3xl font-bold box-content h-32 w-auto p-10 border-0 bg-[#f6fafd] mb-4 text-gray-700"
             >
-                プロジェクト例
+            {{$t("domesticPage.title4")}}
                 <div
                     class="mt-4 md:ml-5 text-gray-500 text-lg font-medium text-gray-500 text-justify"
                 >
-                    -べルサージュ目白<br />-早稲田ハウス <br />-四谷ハウス
+                {{$t("domesticPage.text4_1")}}<br />{{$t("domesticPage.text4_2")}} <br />{{$t("domesticPage.text4_3")}}
                 </div>
             </div>
             <div class="pt-2">
                 <div
                     class="text-center text-2xl md:text-3xl font-bold my-4 mt-4 text-gray-700"
                 >
-                    その他投資事業
+                {{$t("domesticPage.title5")}}
                 </div>
                 <p class="py-2 text-lg font-medium text-gray-500 text-justify">
-                    不動産投資事業の他に、ユニークな投資対象として教育、アート、投資家向けサービスなどにも力を入れています。いずれも、お客様のニーズを丹念にお聞きし、十分に相談した上でお一人お一人に合った形でご提案をさせて頂きます。
+                    {{$t("domesticPage.text5")}}
                 </p>
             </div>
         </div>
@@ -104,11 +104,11 @@
             <div
                 class="text-2xl md:text-3xl font-bold box-content lg:h-32 w-auto p-10 border-0 bg-[#f6fafd] text-gray-700"
             >
-                プロジェクト例
+            {{$t("domesticPage.title6")}}
                 <div
                     class="text-lg font-medium text-gray-500 text-justify mt-5 md:ml-5 text-gray-500"
                 >
-                    -金融事業<br />-教育事業<br />-教育事業
+                {{$t("domesticPage.text6_1")}}<br />{{$t("domesticPage.text6_2")}}<br />{{$t("domesticPage.text6_3")}}
                 </div>
             </div>
         </div>
