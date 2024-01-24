@@ -27,19 +27,16 @@
                 <h1
                     class="font-bold text-2xl md:text-3xl text-gray-700 mt-8 text-center md:text-left"
                 >
-                    Olonlog EXE IT 学校 <br />（オロンログ・エクセ）
+                {{ $t("mongoliaPage.title1") }}<br />{{ $t("mongoliaPage.title1_1") }}
                 </h1>
                 <div class="lg:flex block">
                     <div class="flex text-left">
                         <div
                             class="text-lg font-medium w-auto lg:h-auto md:py-4 pb-8 text-gray-500 max-w-4xl py-4 indent-4"
                         >
-                            2010
-                            年からモンゴルの教育現場を支援し、総生徒数3,500人の校舎ビル建設プロジェクトを実行し、2018年にモンゴル初のITカリキュラムを小学生から教えるOlonlog
-                            EXE
-                            IT学校（オロンログ・エクセ）を設立し現在運営をしています。小学校1年生から高校生まで500人近くの優秀な生徒が通い、デジタル時代のモンゴルのパワーになるために勤勉に勉強をしています。<br /><br />
+                        {{ $t("mongoliaPage.text1_1") }}<br /><br />
                             <p>
-                                設立以来、IT、数学、英語の全国大会やウランバートル市の大会などで毎年数多くのメダルを獲得しており、教育機関からの全額奨学金を受け米国、カナダ、日本へ留学する生徒も輩出しています。本校の生徒たちは、モンゴルだけでなく、世界をリードする国際的にトップ・レベルのプロフェッショナルになれると信じています。
+                                {{ $t("mongoliaPage.text1_2") }}
                             </p>
                             <br />Olonlog EXE School of Ulaanbaatar<br /><br />Tumurchin
                             Avenue 7/1, Chingeltei district, Ulaanbaatar 15171,
@@ -402,7 +399,7 @@
                 <h1
                     class="font-bold text-2xl md:text-3xl text-gray-700 mt-8 text-center md:text-left"
                 >
-                    ターコイズ・ファイナンス
+                {{ $t("mongoliaPage.title2") }}
                 </h1>
                 <div class="lg:flex block">
                     <div class="flex text-justify">
@@ -410,14 +407,13 @@
                             class="text-lg font-medium w-auto lg:h-auto md:py-4 pb-8 text-gray-500 max-w-4xl py-4 indent-4"
                         >
                             <p>
-                                株式会社エクセは、モンゴル最大手証券会社であるBDSec
-                                JSCの機関投資家大株主の一つであり、役員会に取締役も務めています。
+                                {{ $t("mongoliaPage.text2_1") }}
                             </p>
                             <br />
                             <p>
-                                モンゴル金融庁の免許を受けた金融サービス会社である現地法人子会社であるターコイズ・ファイナンスを通じて、モンゴル証券取引所や店頭市場における株式・債券の引受を行うなど、BDSecと共にモンゴルの金融市場で事業を行っています。
+                                {{ $t("mongoliaPage.text2_2") }}
                             </p>
-                            <br />引受業務以外に、ターコイズ・ファイナンスは現地の事業法人に直接ローンを発行し、非銀行部門の金融市場のマーケット・メーカーとしての役割も果たしています。<br />
+                            <br /> {{ $t("mongoliaPage.text2_3") }}<br />
                         </div>
                     </div>
                 </div>

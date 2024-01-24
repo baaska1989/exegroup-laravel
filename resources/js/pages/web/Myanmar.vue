@@ -34,14 +34,13 @@
                             class="text-lg font-medium w-auto lg:h-auto md:py-4 pb-8 text-gray-500 max-w-4xl indent-4"
                         >
                             <p>
-                                サクラタワーは（株）日本設計、（株）鴻池組と、日本企業の手で1999年に完成しました。ヤンゴンのビジネス及び政治のまさに中心地区に位置し、総貸室面積12,425㎡、高さは地上約100mの20階建て耐震設計オフィスビルです。
+                                {{ $t('myanmarPage.text1') }}
                             </p>
                             <br />
                             <p>
-                                地上1階～3階は総貸室面積1,183㎡の小売業エリアと
-                                なっており、主要航空会社のチケットオフィスや旅行代理店、歯医者、ショールームなどが入居しています
+                                {{ $t('myanmarPage.text2') }}
                             </p>
-                            <br />5階から19階にはJICA、三菱商事、日経、NHK等、グローバルに活躍する企業や団体が入居しています。<br /><br />Address:
+                            <br />{{ $t('myanmarPage.text3') }}<br /><br />Address:
                             339 Bogyoke Aung San Road, Kyauktada Township,
                             Yangon, Myanmar<br />Tel: (95 1) 255 255<br />E-mail:
                             stowersales@myanmar.com.mm<br />
@@ -370,27 +369,28 @@
             <div
                 class="text-2xl md:text-3xl font-bold box-content w-auto p-2 border-0 bg-[#f6fafd] my-4 text-gray-700"
             >
-                設備
+                {{ $t("myanmarPage.title2") }}
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div
                         class="font-normal mt-4 text-base text-gray-500 col-span-1"
                     >
-                        24時間フルバックアップの自家発電システム<br />-
-                        &nbsp;24時間体制の監視カメラと警備員による24時間保守警備<br />-
-                        &nbsp;OA機器用床下配線<br />-
-                        &nbsp;高い国際基準に合わせて設計された耐震性<br />-
-                        &nbsp;火災報知機、スプリンクラー、避難口を各階に設置<br />-
-                        &nbsp;専用インターネットアクセス
+                    {{ $t("myanmarPage.line1") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line2") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line3") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line4") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line5") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line6") }}
                     </div>
                     <div
                         class="font-normal text-base mt-4 text-gray-500 col-span-1"
                     >
                         -
-                        &nbsp;4基のハイスピードエレベーター（日立製、三菱電機製）<br />-
-                        &nbsp;貨物専用エレベーター<br />-
-                        &nbsp;44台収容可能な機械式パーキングシステム<br />-
-                        &nbsp;IDD電話<br />- &nbsp;衛星テレビ、ケーブルテレビ<br />-
-                        &nbsp;電話回線：400回線
+                        &nbsp;{{ $t("myanmarPage.line7") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line8") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line9") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line10") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line11") }}<br />
+                        &nbsp;{{ $t("myanmarPage.line12") }}
                     </div>
                 </div>
             </div>
@@ -400,16 +400,16 @@
                 <h1
                     class="font-bold text-2xl md:text-3xl text-gray-700 text-center md:text-left py-2"
                 >
-                    サクラレジデンス
+                {{ $t("myanmarPage.title3") }}
                 </h1>
                 <div class="lg:flex block">
                     <div class="flex text-justify">
                         <div
                             class="text-lg font-medium w-auto lg:h-auto md:py-4 text-gray-500 max-w-4xl py-4 pb-8 indent-4"
                         >
-                            サクラレジデンスは、1998年にヤンゴンで最初に作られた海外駐在員向けの世界水準のサービスを備えた高級サービスアパートメントであり、1泊からもご利用いただける高級ホテルでもあります。閑静な住宅地やインヤ通りのヤシ並木に程近い場所に位置し、ヤンゴン国際空港やビジネス街からほんの数分という好立地にあります。<br /><br />レジデンス内からは、黄金に輝くシュエダゴンパゴダの素晴らしい景色をご覧頂けます。<br /><br />
+                        {{ $t("myanmarPage.text4") }}<br /><br />{{ $t("myanmarPage.text4=5") }}<br /><br />
                             <p>
-                                サクラレジデンスは、お客様が訪れた瞬間から「我が家」と呼ぶに相応しい、ワンルームから広々とした3ベッドルームまでの261室の家具付きのお部屋、広く開放的な庭園やプール、美味しい料理をいつでも味わうことのできるレストラン「カフェ・ティリピセヤ」等、リラックスして快適にお過ごしいただける各種サービスをご用意しています。
+                                {{ $t("myanmarPage.text6") }}
                             </p>
                             <br />Address: 9 Inya Road, Block 10, Kamaryut
                             Township, Yangon, Myanmar<br />Tel: (95 1) 525
@@ -738,35 +738,33 @@
             >
                 <div class="text-gray-500 grid grid-cols-1 md:grid-cols-2">
                     <div class="col-span-1 text-gray-700">
-                        設備
+                        {{ $t("myanmarPage.title4") }}
                         <div
                             class="font-normal text-base mt-5 block text-gray-500 pb-5"
                         >
-                            24時間体制のセキュリティとメンテナンス<br />-
-                            &nbsp;コンシェルジュサービス<br />-
-                            &nbsp;毎日のハウスキーピングサービス<br />-
-                            &nbsp;スイミングプール、フィットネスセンター<br />-
-                            &nbsp;レストラン、バー、バーベキューテラス<br />-
-                            &nbsp;キッズルーム<br />- &nbsp;ルームサービス<br />-
-                            &nbsp;小会議室<br />- &nbsp;ビジネスセンター<br />&nbsp;（各部屋からのインターネットアクセスも可能
-                            ※ 要契約）<br />- &nbsp;屋根付き駐車場完備<br />-
-                            &nbsp;車での送迎サービス<br />-
-                            &nbsp;コンビニエンスストア<br />
+                        
+                            &nbsp;{{ $t("myanmarPage.line13") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line14") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line15") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line16") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line17") }}<br /> &nbsp;{{ $t("myanmarPage.line18") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line19") }}<br /> &nbsp;{{ $t("myanmarPage.line20") }}<br />&nbsp;{{ $t("myanmarPage.line21") }}<br /> &nbsp;{{ $t("myanmarPage.line21_1") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line22") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line23") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line24") }}<br />
                         </div>
                     </div>
                     <div
                         class="col-span-1 text-gray-700 sm:mt-5 lg:mt-0 md:mt-0"
                     >
-                        調度品
+                    {{ $t("myanmarPage.title5") }}
                         <div class="font-normal text-base mt-5 text-gray-500">
-                            - &nbsp;個別操作可能な空調設備<br />-
-                            &nbsp;IDD電話<br />-
-                            &nbsp;専用インターネットアクセス<br />-
-                            &nbsp;多チャンネル衛星放送<br />- &nbsp;金庫<br />-
-                            &nbsp;4口調理台、電動湯沸かし器<br />-
-                            &nbsp;&nbsp;各種家電（洗濯乾燥機、冷凍冷蔵庫、炊飯器、オーブ
-                            ン機能付き電子レンジ、トースター、電気ポット、コー
-                            ヒーメーカー、アイロン、ヘア･ドライヤー、ビデオ、小型ステレオ）
+                            &nbsp;{{ $t("myanmarPage.line25") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line26") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line27") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line28") }}<br /> &nbsp;{{ $t("myanmarPage.line29") }}<br />
+                            &nbsp;{{ $t("myanmarPage.line30") }}<br />
+                            &nbsp;&nbsp;{{ $t("myanmarPage.line31") }}
                         </div>
                     </div>
                 </div>

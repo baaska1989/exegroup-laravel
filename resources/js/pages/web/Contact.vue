@@ -14,7 +14,7 @@
                 class="flex h-full items-center justify-center text-center text-white"
             >
                 <h1 class="mb-6 text-2xl md:text-3xl font-bold">
-                    お問い合わせ
+                    {{$t("contactPage.title")}}
                 </h1>
             </div>
         </div>
@@ -62,7 +62,7 @@
                         </li>
                     </div>
                     <h2 class="text-2xl md:text-3xl font-bold m-8">
-                        お問い合わせ
+                        {{$t("contactPage.title")}}
                     </h2>
                     <form>
                         <div class="form-group mb-6">
