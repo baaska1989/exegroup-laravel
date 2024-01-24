@@ -12,15 +12,15 @@
         >
             <div class="pt-24 md:pt-36 text-center text-white py-8 md:py-10">
                 <h1 class="mb-6 text-2xl md:text-4xl font-bold items-center">
-                    ビジネスインターンシップ
+                    {{ $t("internshipPage.head_title1")}}
                 </h1>
             </div>
             <div
                 class="text-lg pl-8 md:pl-16 md:text-2xl lg:text-3xl lg:mt-16 font-bold justify-start text-white"
             >
-                <h3>変化こそチャンスである。</h3>
+                <h3>{{ $t("internshipPage.head_title2")}}</h3>
                 <h3 class="ml-4">
-                    人と同じではなく自分なりの価値観を信じよう。
+                    {{ $t("internshipPage.head_title3")}}
                 </h3>
             </div>
         </div>
@@ -28,9 +28,7 @@
 
     <div class="flex flex-col mx-auto max-w-6xl">
         <p class="text-lg font-medium md:mt-8 mt-4 py-4 text-gray-500 mx-4">
-            ビジネスインターンシップ制度は、「自ら変化を求める人材」「人と同じではなく自分なりの価値観を持っている人材」を支援するこ
-            とが「最高の投資」と位置付け、単純なインターンとしてではなく、ビジネ
-            スの長期的な実践研修の場として創設しました。
+            {{ $t("internshipPage.text1")}}
         </p>
         <div class="px-4">
             <div class="border-solid border-2 border-[#a7adaf] rounded-[24px]">
@@ -41,7 +39,7 @@
                                 class="text-center text-gray-700 font-semibold md:m-4 m-2"
                             >
                                 <a class="md:text-3xl">\ </a>
-                                留学するか迷っていませんか？ /
+                                {{ $t("internshipPage.frame_title1")}}
                                 <a class="md:text-3xl">/ </a>
                             </h2>
                         </div>
@@ -54,11 +52,11 @@
                             <div
                                 class="text-gray-500 md:px-20 px-4 py-5 md:text-lg text-lg font-medium"
                             >
-                                ・留学費用が高い<br />
-                                ・ゆっくりと語学を学びたい<br />
-                                ・人と違った経験がしたい<br />
-                                ・初めての海外で不安がある<br />
-                                ・語学学校ではなく実務経験を積みたい
+                            {{ $t("internshipPage.frame_text1_1")}}<br />
+                            {{ $t("internshipPage.frame_text1_2")}}<br />
+                            {{ $t("internshipPage.frame_text1_3")}}<br />
+                            {{ $t("internshipPage.frame_text1_4")}}<br />
+                            {{ $t("internshipPage.frame_text1_5")}}
                             </div>
                             <img
                                 src="/assets/img/sad2.jpeg"
@@ -80,7 +78,7 @@
                     </div>
                 </div>
                 <div class="text-center md:text-2xl text-gray-700 font-bold">
-                    エクセのビジネスインターンシップ制度なら
+                    {{ $t("internshipPage.frame_title2")}}
                 </div>
                 <img
                     src="/assets/img/border.png"
@@ -92,8 +90,8 @@
                     loading="lazy"
                 />
                 <div class="py-8">
-                    <div class="text-center md:text-xl text-gray-500"></div>
-                    <div class="text-center md:text-xl text-gray-500"></div>
+                    <div class="text-center md:text-xl text-gray-500">{{ $t("internshipPage.frame_text2_1")}}</div>
+                    <div class="text-center md:text-xl text-gray-500">{{ $t("internshipPage.frame_text2_2")}}</div>
                 </div>
             </div>
         </div>
@@ -101,17 +99,14 @@
             <div
                 class="text-gray-700 text-center md:p-8 sm:p-4 lg:p-8 font-bold md:text-2xl mt-4"
             >
-                ～インターンシップ体験者の声～
+            {{ $t("internshipPage.title1")}}
             </div>
             <div class="flex flex-col-reverse md:flex-row">
                 <p
                     class="md:pl-4 mt-4 text-gray-500 items-center text-lg font-medium"
                 >
-                    S.Iさん 立命館アジア太平洋大学 国際経営学科<br /><br />▶
-                    国籍の異なる人との出会い
-                    ３か月という短い期間でしたが、国籍を問わない多くの人との出会いは、日本では得難く、とても刺激的で、価値観が変わるような経験でした。実際に社会で働く方々との交流の機会は大変貴重で、就職活動のアドバイスや海外で働くこと、女性が働くということについて多くの立場の方から意見を聞くことができました。<br />▶
-                    不安定な情勢下でも安心な留学体制
-                    軍事政権下で不安もありましたが、ビザ手配から帰国まで手厚いサポートがあり何一つ不自由もなくインターンに集中して望めました。また、生活面から業務面でも私が成長できるようなアドバイスがあっただけでなく、就職活動に関しても定期的に相談する機会があり、自分の将来を真剣に考える大変有意義な期間となりました。
+                {{ $t("internshipPage.text1_1")}}<br /><br />{{ $t("internshipPage.text1_2")}}<br />▶
+                {{ $t("internshipPage.text1_3")}}
                 </p>
                 <img
                     src="/assets/img/woman1.jpeg"
@@ -123,11 +118,7 @@
                 <p
                     class="sm:pb-4 text-gray-500 mt-4 sm:mt-4 text-lg font-medium"
                 >
-                    T.Mさん 東京外国語大学 ビルマ語学科<br /><br />▶
-                    現地スタッフとのコミュニケーション
-                    日本とは全く違うミャンマーで暮らすことに対する不安もありました。しかし毎日、ホテルのスタッフと触れ合う中ですぐにその不安も消えてしまいました。また、ビジネスを学ぶだけでなく、ホテルスタッフとの会話を通してビルマ語の習得もできたことが本当によかったです。<br />▶
-                    人々の温かさに触れる充実したインターン生活
-                    このインターンシップで、何よりも一番心に残ったのは、人々の温かさです。ホテルのスタッフは、最初から最後まで、わがままな私に親切にしてくれ、本当の家族のように接してくれました。毎日が本当に充実しており、あっという間に過ぎ去ってしまいました。この経験は絶対に忘れることはありませんし、私自身、インターンシップを終えて、以前より成長できたと思います。
+                {{ $t("internshipPage.text1_4")}}<br /><br />{{ $t("internshipPage.text1_5")}}<br />{{ $t("internshipPage.text1_6")}}
                 </p>
                 <img
                     src="/assets/img/guy1.jpg"
@@ -144,27 +135,23 @@
                 <p
                     class="md:pl-4 mt-4 md:pb-8 text-gray-500 text-lg font-medium"
                 >
-                    E・Mさん 上智大学 教育学科<br /><br />▶
-                    今、ミャンマーへ行くということ
-                    インターンシップに参加して、まず驚いたことは、ミャンマーの治安の良さと人の温厚さです。ミャンマーは熱心な仏教徒の国で通信や流通が安定していないからこそ、情報が溢れておらず、人々の生活は穏やかで豊かであるように感じました。10年も経てばミャンマーも変わります。このタイミングで参加できたことにとても感謝しています。<br />▶
-                    チャレンジングなインターン内容
-                    インターン期間は、2週間でした。主な仕事内容は、日本人としてのクリンネスの感覚を、現地のスタッフに共有するということでした。ホテル業を何も知らない私が、自分なりの改善案を共有するということは重圧でしたが日本人マネージャーの方々が最大限にサポートしてくれました。苦戦しながらも目標達成に向けて努力するという工程は自分の糧になったと感じております。私にとって、チャレンジングなインターンでしたがとても濃い2週間となりました。ぜひ半年以上の参加をおすすめします！
+                {{ $t("internshipPage.text1_7")}}<br /><br />{{ $t("internshipPage.text1_8")}}<br />{{ $t("internshipPage.text1_9")}}
                 </p>
             </div>
             <div class="bg-[#f6fafd] p-4 mt-4">
                 <div class="md:text-2xl text-gray-700 mt-10 font-bold">
-                    インターン実績大学
+                    {{ $t("internshipPage.title2")}}
                 </div>
                 <p class="text-gray-500 text-lg font-medium break-words py-10">
-                    早稲田大学、明治大学、上智大学、立命館アジア太平洋大学、明治学院大学、国士舘大学、静岡大学、東京外国語大学など
+                    {{ $t("internshipPage.text2_1")}}
                 </p>
             </div>
             <div class="break-word text-lg mt-5 text-gray-500">
                 <p>
-                    海外でのインターンシップというと少々敷居が高いように感じ身構えてしまうかもしれません。ただ、この小さな一歩は、あなたの人生の大きな財産になることは間違いありません。
+                    {{ $t("internshipPage.text2")}}
                 </p>
                 <p class="mt-5">
-                    私たちの目的は、新たな一歩へ皆さんの背中を押すことです。人生に挑戦したい、今を変えたい、あなたのチャレンジをお待ちしています。
+                    {{ $t("internshipPage.text3")}}
                 </p>
             </div>
         </div>
@@ -173,7 +160,7 @@
             <div
                 class="border-collapse border border-1 border-gray-500 text-center font-lg bg-darkblue text-white p-4"
             >
-                会社概要
+            {{ $t("internshipPage.table1")}}
             </div>
             <table class="table-auto border-gray-500 w-[100%]">
                 <thead>
@@ -181,12 +168,12 @@
                         <th
                             class="border font-normal border-gray-500 text-gray-500"
                         >
-                            時期
+                        {{ $t("internshipPage.table1_row1_1")}}
                         </th>
                         <th
                             class="text-left border border-gray-500 p-5 font-normal text-gray-500"
                         >
-                            随時
+                        {{ $t("internshipPage.table1_row1_2")}}
                         </th>
                     </tr>
                 </thead>
@@ -195,85 +182,84 @@
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            参加対象
+                        {{ $t("internshipPage.table1_row2_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            年齢・職歴問わず、学生歓迎。
+                            {{ $t("internshipPage.table1_row2_2")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            応募資格
+                        {{ $t("internshipPage.table1_row3_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            1．アジアに興味がある、アジアが大好きな方。<br />2．ホテル運営に興味があるなど好奇心を持ち、また向上心をもった元気のある方。<br />3.リゾートホテルにおけるサービス、国際的な感覚、英語力等を身につけたい方<br />4．自分の英語力、その他の言語力を試したい方。<br />5．旅行ではなく、人とは違った海外経験をしたい方。
+                            {{ $t("internshipPage.table1_row3_21")}}<br />{{ $t("internshipPage.table1_row3_22")}}<br />{{ $t("internshipPage.table1_row3_23")}}<br />{{ $t("internshipPage.table1_row3_24")}}<br />{{ $t("internshipPage.table1_row3_25")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            実施場所
+                        {{ $t("internshipPage.table1_row4_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
                             <a href="http://sakura-tower-yangon.com/"
-                                >サクラタワー http://sakura-tower-yangon.com/</a
+                                >{{ $t("internshipPage.table1_row4_21")}}</a
                             ><br /><a href="http://sakura-residence-yangon.com/"
-                                >サクラレジデンスー
-                                http://sakura-residence-yangon.com/</a
-                            ><br />（ミャンマー：ヤンゴン）<br />※日本人が常に駐在しています。
+                                >{{ $t("internshipPage.table1_row4_22")}}</a
+                            ><br />{{ $t("internshipPage.table1_row4_23")}}<br />{{ $t("internshipPage.table1_row4_24")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            職種
+                        {{ $t("internshipPage.table1_row5_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            ウェイター・ウェイトレス、ハウスキーピング、お土産販売　など
+                            {{ $t("internshipPage.table1_row5_2")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            研修期間
+                            {{ $t("internshipPage.table1_row55_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            1ヶ月～（要相談）
+                            {{ $t("internshipPage.table1_row55_2")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            自己負担
+                        {{ $t("internshipPage.table1_row6_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            1．ビザ・航空券・保険等費用<br />※ビザ申請は約1カ月程度かかります。<br />（日本－ヤンゴン航空券代、ヤンゴン－バガン移動費用、海外旅行保険料等）<br />2．食費を含む生活費用<br />※研修は現地集合（ヤンゴン）となります。
+                            {{ $t("internshipPage.table1_row6_21")}}<br />{{ $t("internshipPage.table1_row6_22")}}<br />{{ $t("internshipPage.table1_row6_23")}}<br />{{ $t("internshipPage.table1_row6_24")}}<br />{{ $t("internshipPage.table1_row6_25")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            企業負担
+                        {{ $t("internshipPage.table1_row7_1")}}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            宿泊・食事等費用、通勤送迎費の一部または全額補助
+                            {{ $t("internshipPage.table1_row7_2")}}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            その他補足
+                        {{ $t("internshipPage.table1_row8_1")}}
                         </td>
                         <td class="p-5 border border-gray-500 text-gray-500">
-                            1．給与等の支給はございません。<br />2．インターンシップは本採用を前提としたものではありません。<br />本採用を希望される方は別途選考を受けて頂く必要があります。<br />　※インターン生から本採用の実績あり。<br />3．渡航前にB型肝炎の検査、海外保険の加入をお願します。<br />4．インターンの参加には誓約書へ同意いただく必要があります。<br />5．渡航時は最低限の所持金として約1000ドルをご用意いただきます。
+                            {{ $t("internshipPage.table1_row8_21")}}<br />{{ $t("internshipPage.table1_row8_22")}}<br />{{ $t("internshipPage.table1_row8_23")}}<br />{{ $t("internshipPage.table1_row8_24")}}<br />{{ $t("internshipPage.table1_row8_25")}}<br />{{ $t("internshipPage.table1_row8_26")}}<br />{{ $t("internshipPage.table1_row8_27")}}
                         </td>
                     </tr>
                 </tbody>
@@ -281,10 +267,10 @@
         </div>
         <div class="grid justify-center">
             <p class="mt-6 text-gray-500 font-normal text-base md:text-lg ml-2">
-                ※ 応募書類は返却いたしません。
+                {{ $t("internshipPage.text4")}}
             </p>
             <p class="text-gray-500 font-normal text-base md:text-lg ml-2">
-                ※ ご不明な点がございましたら、お問い合わせください。
+                {{ $t("internshipPage.text5")}}
             </p>
         </div>
         <div class="items-center text-center">
@@ -296,16 +282,16 @@
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
                 >
-                    応募する
+                {{ $t("internshipPage.button")}}
                 </button></a
             >
         </div>
         <div class="md:text-2xl text-gray-700 font-semibold p-4">
             <p class="text-gray-700 text-center font-semibold mb-4">
-                ～インターンシップの内容（例）～
+                {{ $t("internshipPage.title3")}}
             </p>
             <p class="text-gray-700 font-semibold text-start">
-                サクラタワー研修プログラム（例）
+                {{ $t("internshipPage.title3_1")}}
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2">
@@ -320,12 +306,12 @@
                         <div
                             class="text-center font-medium text-white m-3 border-gray-500"
                         >
-                            日目
+                        {{ $t("internshipPage.table2_row1_1")}}
                         </div>
                         <div
                             class="p-2 col-span-6 font-medium text-white text-center border-gray-500"
                         >
-                            内容
+                        {{ $t("internshipPage.table2_row1_2")}}
                         </div>
                     </div>
                     <div
@@ -337,8 +323,8 @@
                             1
                         </div>
                         <div class="p-2 col-span-6 font-medium text-gray-500">
-                            ヤンゴン到着 <br />オリエンテーシ ョン<br />ユニフォーム作成
-                            <br />サクラカフェ研修スタート <br />
+                            {{ $t("internshipPage.table2_row1_21")}} <br />{{ $t("internshipPage.table2_row1_22")}}<br />{{ $t("internshipPage.table2_row1_24")}}
+                            <br />{{ $t("internshipPage.table2_row1_26")}}<br />
                         </div>
                     </div>
                     <div
@@ -348,7 +334,7 @@
                             2
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            研修スタート
+                            {{ $t("internshipPage.table2_row2_2")}}
                         </div>
                     </div>
                     <div
@@ -358,7 +344,7 @@
                             3
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{ $t("internshipPage.table2_row3_2")}}
                         </div>
                     </div>
                     <div
@@ -368,7 +354,7 @@
                             4
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            スカイビストロへ移動<br />レストラン研修
+                            {{ $t("internshipPage.table2_row4_21")}}<br />{{ $t("internshipPage.table2_row5_2")}}
                         </div>
                     </div>
                     <div
@@ -378,7 +364,7 @@
                             5
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レストラン研修
+                            {{$t("internshipPage.table2_row5_2")}}
                         </div>
                     </div>
                     <div
@@ -388,7 +374,7 @@
                             6
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table2_row6_2")}}
                         </div>
                     </div>
                     <div
@@ -398,7 +384,7 @@
                             7
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レストラン研修
+                            {{$t("internshipPage.table2_row7_2")}}
                         </div>
                     </div>
                     <div
@@ -408,7 +394,7 @@
                             8
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レストラン研修
+                            {{$t("internshipPage.table2_row8_2")}}
                         </div>
                     </div>
                     <div
@@ -418,7 +404,7 @@
                             9
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table2_row9_2")}}
                         </div>
                     </div>
                     <div
@@ -428,7 +414,7 @@
                             10
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ヤンゴンヤンゴンへ移動<br />バーにてレセプション業務
+                            {{$t("internshipPage.table2_row10_21")}}<br />{{$t("internshipPage.table2_row10_22")}}
                         </div>
                     </div>
                     <div
@@ -438,7 +424,7 @@
                             11
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            バー研修
+                            {{$t("internshipPage.table2_row11_2")}}
                         </div>
                     </div>
                     <div
@@ -448,7 +434,7 @@
                             12
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            バー研修
+                            {{$t("internshipPage.table2_row12_2")}}
                         </div>
                     </div>
                     <div
@@ -458,7 +444,7 @@
                             13
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table2_row13_2")}}
                         </div>
                     </div>
                     <div
@@ -468,7 +454,7 @@
                             14
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            バー研修
+                            {{$t("internshipPage.table2_row14_2")}}
                         </div>
                     </div>
                 </div>
@@ -479,30 +465,30 @@
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-t-2 border-r-2 border-l-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            カフェ研修
+                            {{$t("internshipPage.table2_row15_1")}}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            マグカップ等食器洗いや店内清掃、飲食店に欠かせない基本を学びます。専用マシーンを使ったコーヒーを淹れるバリスタ業務、フレッシュジュース等の作り方を学び、実践します。
+                            {{$t("internshipPage.table2_row15_2")}}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            レストラン研修
+                            {{$t("internshipPage.table2_row16_1")}}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            備品や清掃確認、テーブル、バーのセッティングを行います。英語での接客、カクテルやデザートの作り方を学び、実践します。
+                            {{$t("internshipPage.table2_row16_2")}}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-b-2 border-l-2 border-r-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            バー研修
+                            {{$t("internshipPage.table2_row17_1")}}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            入場チケットの販売管理、備品や清掃確認をします。テーブル、バーのセッティングを行います。英語での接客業務を行います。
+                            {{$t("internshipPage.table2_row17_2")}}
                         </div>
                     </div>
                 </div>
@@ -821,11 +807,10 @@
             </div>
         </div>
         <p class="mt-4 m-4 font-medium text-lg text-gray-500">
-            ヤンゴンのランドマークとなったサクラタワーにはICA、三菱商事、日経、NHK等、
-            グローバルに活躍する企業や団体が入居しており、ヨーロッパ、アジアなどの海外からの駐在員や観光客が多く訪れています。
+            ヤンゴンのランドマークとなったサクラタワーにはICA、三菱商事、日経、NHK等、グローバルに活躍する企業や団体が入居しており、ヨーロッパ、アジアなどの海外からの駐在員や観光客が多く訪れています。
         </p>
         <h1 class="font-bold md:text-2xl text-center text-gray-700 mt-4 mb-4">
-            サクラレジデンス研修プログラム（例）
+            {{$t("internshipPage.table3_title")}}
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="flex basis-1/3">
@@ -834,12 +819,12 @@
                         class="divide-gray-500 grid grid-cols-7 divide-x-2 md:ml-5 border-t-2 border-r-2 border-l-2 bg-darkblue border-gray-500"
                     >
                         <div class="text-center font-bold text-white m-3">
-                            日目
+                            {{$t("internshipPage.table3_row0_1")}}
                         </div>
                         <div
                             class="p-2 col-span-5 font-bold text-white text-center"
                         >
-                            内容
+                        {{$t("internshipPage.table3_row0_2")}}
                         </div>
                     </div>
                     <div
@@ -849,7 +834,7 @@
                             1
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ヤンゴン到着<br />サクラレジデンスの説明<br />ハウスキーピング研修（パブリックエリア）
+                            {{$t("internshipPage.table3_row1_21")}}<br />{{$t("internshipPage.table3_row1_22")}}<br />{{$t("internshipPage.table3_row1_23")}}
                         </div>
                     </div>
                     <div
@@ -859,8 +844,8 @@
                             2
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ハウスキーピング研修（パブリックエリア、
-                            <br />ペストコ ントロール）
+                            {{$t("internshipPage.table3_row2_2")}}
+                            <br />{{$t("internshipPage.table3_row2_2_1")}}
                         </div>
                     </div>
                     <div
@@ -870,7 +855,7 @@
                             3
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table3_row3_2")}}
                         </div>
                     </div>
                     <div
@@ -880,7 +865,7 @@
                             4
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ハウスキーピング研修（ルームクリーニング）
+                            {{$t("internshipPage.table3_row4_2")}}
                         </div>
                     </div>
                     <div
@@ -890,7 +875,7 @@
                             5
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ハウスキーピング研修
+                            {{$t("internshipPage.table3_row5_2")}}
                         </div>
                     </div>
                     <div
@@ -900,7 +885,7 @@
                             6
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            ハウスキーピング研修
+                            {{$t("internshipPage.table3_row6_2")}}
                         </div>
                     </div>
                     <div
@@ -910,7 +895,7 @@
                             7
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table3_row7_2")}}
                         </div>
                     </div>
                     <div
@@ -920,7 +905,7 @@
                             8
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レセプション研修（ベルスタッフ）
+                            {{$t("internshipPage.table3_row8_2")}}
                         </div>
                     </div>
                     <div
@@ -930,7 +915,7 @@
                             9
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レセプション研修（ジム）
+                            {{$t("internshipPage.table3_row9_2")}}
                         </div>
                     </div>
                     <div
@@ -940,7 +925,7 @@
                             10
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table3_row10_2")}}
                         </div>
                     </div>
                     <div
@@ -950,7 +935,7 @@
                             11
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レセプション研修（フロント）
+                            {{$t("internshipPage.table3_row11_2")}}
                         </div>
                     </div>
                     <div
@@ -960,7 +945,7 @@
                             12
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レセプション研修
+                            {{$t("internshipPage.table3_row12_2")}}
                         </div>
                     </div>
                     <div
@@ -970,7 +955,7 @@
                             13
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            休暇
+                            {{$t("internshipPage.table3_row13_2")}}
                         </div>
                     </div>
                     <div
@@ -980,7 +965,7 @@
                             14
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            レセプション研修
+                            {{$t("internshipPage.table3_row14_2")}}
                         </div>
                     </div>
                 </div>
@@ -991,20 +976,20 @@
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-t-2 border-r-2 border-l-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            ハウスキーピング研修
+                            {{$t("internshipPage.table3_row15_1")}}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            マグカップ等食器洗いや店内清掃、飲食店に欠かせない基本を学びます。専用マシーンを使ったコーヒーを淹れるバリスタ業務、フレッシュジュース等の作り方を学び、実践します。
+                            {{$t("internshipPage.table3_row15_2")}}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            レセプション研修
+                            {{$t("internshipPage.table3_row16_1")}}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            備品や清掃確認、テーブル、バーのセッティングを行います。英語での接客、カクテルやデザートの作り方を学び、実践します。
+                            {{$t("internshipPage.table3_row16_2")}}
                         </div>
                     </div>
                 </div>
@@ -1323,12 +1308,12 @@
             </div>
         </div>
         <p class="mt-10 mb-10 m-4 text-left font-medium text-lg text-gray-500">
-            サクラレジデンスには日本人3割、その他ヨーロッパ・アジアの駐在員7割と海外からの駐在員が多く住んでいます。英語での接客が日常的に発生します。
+            {{$t("internshipPage.text_frame")}}
         </p>
         <div class="mx-4">
             <div class="border-2 border-gray-300 rounded-xl mt-5">
                 <h2 class="text-center text-gray-700 md:text-xl font-bold m-4">
-                    <a class="md:text-3xl">\ </a> 留学費用はどれくらい必要なの?
+                    <a class="md:text-3xl">\ </a> {{$t("internshipPage.frame2_title1")}}
                     <a class="md:text-3xl">/ </a>
                 </h2>
                 <div class="flex">
@@ -1350,7 +1335,7 @@
                     <p
                         class="flex-1 text-gray-700 font-bold md:text-lg ml-2 mt-8"
                     >
-                        宿泊費用は無料、負担は渡航費（保険含む）と食費・生活費のみ
+                    {{$t("internshipPage.frame2_title2")}}
                     </p>
                 </div>
                 <div
@@ -1359,7 +1344,7 @@
                     <p
                         class="md:pr-10 p-2 text-justify font-medium text-gray-500"
                     >
-                        エクセが運営するサクラレジデンスに宿泊いただきます。日本人スタッフも常駐しているので安心です。ジム、プールなどのファシリティーも充実しており、ミニマートでは日本の食品なども購入可能で、レストランは日本食も対応しており休日もゆっくりとお過ごし頂けるアパートです。
+                    {{$t("internshipPage.frame2_text2_1")}}
                     </p>
                     <img
                         src="/assets/img/7.jpg"
@@ -1376,17 +1361,17 @@
                     <p
                         class="flex-1 text-gray-700 font-bold md:text-xl sm:mt-10 pr-5 mt-10 lg:mt-14"
                     >
-                        平均飛行時間10時間38分、最安値63,720円　
+                    {{$t("internshipPage.frame2_title3")}}
                     </p>
                 </div>
                 <div>
                     <p
                         class="text-center text-gray-700 font-bold md:text-lg px-4"
                     >
-                        NRT（成田空港）⇒BKK（タイ・バンコク経由）⇒RGN（ヤンゴン国際空港）
+                    {{$t("internshipPage.frame2_title4")}}
                     </p>
                     <p class="text-center m-4 font-medium text-gray-500 mt-5">
-                        時期により日本↔ヤンゴンの直行便もあります。ヤンゴン国際空港まで現地スタッフが送迎いたしますのでご安心ください。
+                        {{$t("internshipPage.frame2_text4_1")}}
                     </p>
                 </div>
                 <div class="flex">
@@ -1411,14 +1396,14 @@
                         ></path>
                     </svg>
                     <p class="text-gray-700 font-bold md:text-lg p-2 mt-5 ml-5">
-                        通貨はドルとチャット（MMK)、1ヶ月の食費は約30,000円　※時期により変動します。
+                        {{$t("internshipPage.frame2_title5")}}
                     </p>
                 </div>
                 <div>
                     <p
                         class="text-center font-medium md:text-lg text-gray-500 mx-4 mt-5 mb-8"
                     >
-                        1886年にイギリスの植民地になったことから通貨はドルとチャットが利用できます。
+                    {{$t("internshipPage.frame2_text5_1")}}
                     </p>
                 </div>
             </div>
@@ -1428,7 +1413,7 @@
                 <h2
                     class="font-bold md:text-2xl text-gray-700 text-center my-6"
                 >
-                    留学費用はどれくらい必要なの?
+                {{$t("internshipPage.frame2_title1")}}
                 </h2>
                 <img
                     src="/assets/img/border.png"
@@ -1446,13 +1431,10 @@
                     <h3
                         class="font-bold text-gray-700 text-center md:text-left mx-4 mt-4"
                     >
-                        関原夕希子（Yukiko Sekihara）<br />Sales Director
+                        関原夕希子 （Yukiko Sekihara）<br />Sales Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        大学卒業後、ファーストリテイリング株式会社にて1年間店長補佐を経験した後、株式会社エクセへ転職。2012年よりミャンマーに駐在し、
-                        現在はサクラタワーとヤンゴンヤンゴンルーフトップバーの営業・販促を担当。弊社は若手に責任あるプロジェクトを任せる文化があり、
-                        海外で活躍するチャンスがあります。特にミャンマーではマネジメントの部分を任されており、
-                        バックグラウンドの異なるミャンマー人の仲間と協力するのは大変ですが、とてもやりがいがあり、日々勉強になっています。
+                        {{$t("internshipPage.text7")}}
                     </p>
                 </div>
             </div>
@@ -1469,7 +1451,7 @@
                         Cherry Aung　<br />General Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        ミャンマー人でありながら、セールスエグゼクティブからゼネラルマネージャーになるまでキャリア開発を得る絶好の機会がありました。ロイヤルティ、組織のためにベストを尽くす姿勢、日々の業務改善が将来のキャリアアップの鍵になると断言します。
+                        {{$t("internshipPage.text8")}}
                     </p>
                 </div>
             </div>
@@ -1486,10 +1468,7 @@
                         Zar Ni Lwin　<br />Residence Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        2008年に株式会社エクセ（サクラレジデンス）へ営業担当として入社。2012年にレジデンスマネージャーに昇格し、
-                        サービスアパートメントであるサクラレジデンスの業務を統括しています。株式会社エクセは、多くの動機付け方略を試すことができ、
-                        同僚とオープンな議論を交わすこともでき、社員がハッピーでいられる職場であります。
-                        ここではプロフェショナル面もプライベート面も両面同様に充実させることが可能だと感じています。
+                        {{$t("internshipPage.text9")}}
                     </p>
                 </div>
             </div>
@@ -1506,10 +1485,7 @@
                         堀越美緒（Mio Horikoshi）　<br />Sales Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        大学卒業後すぐに海外に行きたいという思いが強く、株式会社エクセに入社してミャンマーに駐在9年目。
-                        ホテルやレストラン、サービスアパートメントの運営に加え、セレクトショップやルーフトップバー、朝市などの立ち上げも経験。
-                        ヤンゴンは日本人だけでなく多くの外国人が集まる場所なので、様々な文化や言語の中で様々な体験ができ、刺激的な日々を過ごすことができます。
-                        好奇心旺盛で刺激を求めている方にぴったりの職場です。一緒に外国で明るく楽しく働きましょう！
+                        {{$t("internshipPage.text10")}}
                     </p>
                 </div>
             </div>
@@ -1526,7 +1502,7 @@
                         Phyoe Wai Moe　<br />YangonYangon Bar Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        ヤンゴンの最も高いルーフトップバーであるヤンゴンヤンゴンで、素晴らしい経営陣・協力的な同僚と一緒に日々楽しく仕事をしています。家族のようなチームメンバーに囲まれ、毎日疲れを感じることなく働ける職場です。
+                        {{$t("internshipPage.text11")}}
                     </p>
                 </div>
             </div>
@@ -1543,10 +1519,7 @@
                         白井竜太（Ryuta Shirai）　<br />Deputy Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        2014年にインターンシップに参加し、バガンとヤンゴンで1年間勤務した後、新卒で株式会社エクセに入社。
-                        レストラン部門を中心に運営部門を担当。ミャンマーは日本とはかなり違いますが、仕事の本質は変わりません。
-                        しかし、文化や言語、習慣が異なるため、より密なコミュニケーションが求められ、それが人間の成長につながると思います。
-                        近年の社会情勢の中に私の年齢から参加できることは非常に重要で貴重な経験になっています。
+                        {{$t("internshipPage.text12")}}
                     </p>
                 </div>
             </div>
@@ -1563,11 +1536,7 @@
                         下山徹（Toru Shimoyama）　<br />Sales Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        現地の日系メディアで4年間勤務した後、2020年に株式会社エクセに入社。
-                        現在はサクラタワー、サクラレジデンス、ヤンゴンヤンゴンルーフトップバーの営業管理、運営、販促に携わっており、
-                        商工会の事務局なども兼任しています。現在のミャンマーは正に「激動」です。しかし、こちらにいるからこそ得られる成長機会、
-                        刺激、チャンスがあります。世界から注目を集めるミャンマーで自分を試してみませんか。思い立ったが吉日、即行動してください。
-                        度胸と愛嬌と熱意のある方、大歓迎です。
+                        {{$t("internshipPage.text13")}}
                     </p>
                 </div>
             </div>
@@ -1584,11 +1553,7 @@
                         Myo Zaw Oo　<br />Residence Assistant Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        2011年から株式会社エクセ（サクラレジデンス）に所属。ホスピタリティ業界での経験は16年以上になります。
-                        フロントオフィスとセールス部門を経て、現在のアシスタント・レジデンスマネージャーのポジションに至ります。
-                        エクセで働くにあたってリーダーシップスキルを向上させることができ、
-                        日本やミャンマーのみならず多国籍のお客様や文化や従業員と深く接する機会が増えました。
-                        ミャンマーでのキャリアを向上させたい熱心な若者には最高の環境であると思います。
+                        {{$t("internshipPage.text14")}}
                     </p>
                 </div>
             </div>
@@ -1605,14 +1570,14 @@
                         寺田 敏秀（Toshihide Terada）　<br />Myanmar Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        大学卒業後、日系銀行で海外融資審査に携わり、その後エクセに入社。2011年からミャンマーの責任者として駐在。以前は欧米関係の仕事が多く、アジアの国は初めてでしたが、大変活気があって国・都市の発展への意気込みに溢れています。また企業の駐在員だけでなく、若い事業家など世界中の人々で賑わい、競い合い、頼もしい限りです。大事なのは言葉や知識ではなくて、やる気と熱意、そして人の輪に飛び込んでいく度胸です。是非チャレンジしてみて下さい。
+                        {{$t("internshipPage.text15")}}
                     </p>
                 </div>
             </div>
         </div>
         <div>
             <h2 class="font-bold text-2xl text-gray-700 text-center my-4">
-                <a class="text-3xl">\ </a>よくある質問
+                <a class="text-3xl">\ </a>{{$t("internshipPage.title5")}}
                 <a class="text-3xl">/ </a>
             </h2>
             <div class="md:px-12 px-4">
@@ -1622,7 +1587,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors text-blue-gray-900 accor-header"
                     >
                         <p class="text-gray-700">
-                            ミャンマーってどんな国ですか？
+                            {{$t("internshipPage.question1")}}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1642,7 +1607,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal accor-body"
                         >
                             <p class="text-gray-500">
-                                『アジア最後のフロンティア』と呼ばれるミャンマー。人口は5380万人、135の民族による多民族国家であり、イギリスの旧植民地でビルマ語と英語を利用します。国民の約9割が仏教徒で街中には仏塔（パゴダ）が並びます。素朴で穏やかな優しい人が多く、気質は日本人に似ているとも言われます。
+                                {{$t( "internshipPage.answer1")}}
                             </p>
                         </div>
                     </div>
@@ -1653,7 +1618,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            英語はどれくらい利用しますか？
+                            {{$t("internshipPage.question2")}}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1673,7 +1638,7 @@
                             class="block w-full py-4 antialiased font-sans text-sm font-light leading-normal text-gray-700"
                         >
                             <p class="text-gray-500">
-                                英語は海外駐在員やローカルスタッフとの接客やコミュニケーションで利用します。ローカルスタッフとはビルマ語を話す機会もあります。
+                                {{$t("internshipPage.answer2")}}
                             </p>
                         </div>
                     </div>
@@ -1684,7 +1649,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            TOEICなど応募条件はありますか？
+                            {{$t("internshipPage.question3")}}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1704,7 +1669,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                         >
                             <p class="text-gray-500">
-                                3ヶ月以内の短期留学の場合、目安としてTOEIC800点程度の英語力があると幅広い業務への挑戦機会が提供できると考えています。6カ月など長期留学の場合はインターン当初の英語力は求めませんが、TOEIC600点はあることが望ましいです。
+                                {{$t("internshipPage.answer3")}}
                             </p>
                         </div>
                     </div>
@@ -1715,7 +1680,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            治安や衛生面は心配はないのでしょうか？
+                            {{$t("internshipPage.question4")}}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1735,7 +1700,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                         >
                             <p class="text-gray-500">
-                                2021年以降の軍事政権下で治安が心配されていますが、駐在員のルールを守り活動いただければ問題なく、過去40名以上のインターン受け入れにおいてトラブル・事故が発生したことはございません。衛生面においては外出時の飲食では注意が必要ですので駐在員の指示に従っていただきます。
+                                {{$t("internshipPage.answer4")}}
                             </p>
                         </div>
                     </div>
@@ -1750,7 +1715,7 @@
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
                     >
-                        応募する
+                    {{$t("internshipPage.button")}}
                     </button></a
                 >
             </div>
