@@ -1,7 +1,7 @@
 <template>
     <div
         class="relative overflow-hidden bg-cover bg-no-repeat h-[16rem] md:h-[20rem] lg:h-[28rem]"
-        style="
+        style="margin-top: 120px;
             background-position: 50% center;
             background-image: url('/assets/img/mv.jpg');
         "
@@ -13,7 +13,7 @@
             <div
                 class="flex h-full items-center justify-center text-center text-white"
             >
-                <h1 class="mb-6 text-2xl md:text-3xl font-bold">
+                <h1 class="mb-6 text-2xl md:text-3xl font-bold" style="font-size: 1.5rem !important;">
                     {{$t("contactPage.title")}}
                 </h1>
             </div>

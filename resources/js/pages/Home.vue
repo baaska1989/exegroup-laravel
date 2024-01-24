@@ -126,7 +126,7 @@
                         />
                     </div>
                     <div class="max-w-lg m-4 col-span-1">
-                        <h1 class="text-primary text-sm mb-2">
+                        <h1 class="text-primary text-sm mb-2" style="font-weight: bold;">
                             August 21, 2022
                         </h1>
                         <h2
@@ -134,7 +134,7 @@
                         >
                         {{ $t("projects.title1") }}
                         </h2>
-                        <p
+                        <p style="font-size: 16px; font-weight: bold;"
                             class="font-medium mt-6 font-sans text-gray-500 max-w-2xl"
                         >
                         {{ $t("projects.text1") }}

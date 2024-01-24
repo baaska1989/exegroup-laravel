@@ -2,6 +2,7 @@
     <div
         class="relative overflow-hidden bg-cover bg-no-repeat h-[16rem] md:h-[20rem] lg:h-[28rem]"
         style="
+            margin-top: 120px;
             background-position: 50% center;
             background-image: url('/assets/img/img4.jpg');
         "
@@ -11,16 +12,19 @@
             style="background-color: rgba(0, 0, 0, 0)"
         >
             <div class="pt-24 md:pt-36 text-center text-white py-8 md:py-10">
-                <h1 class="mb-6 text-2xl md:text-4xl font-bold items-center">
-                    {{ $t("internshipPage.head_title1")}}
+                <h1
+                    class="mb-6 text-2xl md:text-4xl font-bold items-center"
+                    style="font-size: 1.5rem !important"
+                >
+                    {{ $t("internshipPage.head_title1") }}
                 </h1>
             </div>
             <div
                 class="text-lg pl-8 md:pl-16 md:text-2xl lg:text-3xl lg:mt-16 font-bold justify-start text-white"
             >
-                <h3>{{ $t("internshipPage.head_title2")}}</h3>
+                <h3>{{ $t("internshipPage.head_title2") }}</h3>
                 <h3 class="ml-4">
-                    {{ $t("internshipPage.head_title3")}}
+                    {{ $t("internshipPage.head_title3") }}
                 </h3>
             </div>
         </div>
@@ -28,7 +32,7 @@
 
     <div class="flex flex-col mx-auto max-w-6xl">
         <p class="text-lg font-medium md:mt-8 mt-4 py-4 text-gray-500 mx-4">
-            {{ $t("internshipPage.text1")}}
+            {{ $t("internshipPage.text1") }}
         </p>
         <div class="px-4">
             <div class="border-solid border-2 border-[#a7adaf] rounded-[24px]">
@@ -39,7 +43,7 @@
                                 class="text-center text-gray-700 font-semibold md:m-4 m-2"
                             >
                                 <a class="md:text-3xl">\ </a>
-                                {{ $t("internshipPage.frame_title1")}}
+                                {{ $t("internshipPage.frame_title1") }}
                                 <a class="md:text-3xl">/ </a>
                             </h2>
                         </div>
@@ -52,11 +56,11 @@
                             <div
                                 class="text-gray-500 md:px-20 px-4 py-5 md:text-lg text-lg font-medium"
                             >
-                            {{ $t("internshipPage.frame_text1_1")}}<br />
-                            {{ $t("internshipPage.frame_text1_2")}}<br />
-                            {{ $t("internshipPage.frame_text1_3")}}<br />
-                            {{ $t("internshipPage.frame_text1_4")}}<br />
-                            {{ $t("internshipPage.frame_text1_5")}}
+                                {{ $t("internshipPage.frame_text1_1") }}<br />
+                                {{ $t("internshipPage.frame_text1_2") }}<br />
+                                {{ $t("internshipPage.frame_text1_3") }}<br />
+                                {{ $t("internshipPage.frame_text1_4") }}<br />
+                                {{ $t("internshipPage.frame_text1_5") }}
                             </div>
                             <img
                                 src="/assets/img/sad2.jpeg"
@@ -78,7 +82,7 @@
                     </div>
                 </div>
                 <div class="text-center md:text-2xl text-gray-700 font-bold">
-                    {{ $t("internshipPage.frame_title2")}}
+                    {{ $t("internshipPage.frame_title2") }}
                 </div>
                 <img
                     src="/assets/img/border.png"
@@ -90,8 +94,12 @@
                     loading="lazy"
                 />
                 <div class="py-8">
-                    <div class="text-center md:text-xl text-gray-500">{{ $t("internshipPage.frame_text2_1")}}</div>
-                    <div class="text-center md:text-xl text-gray-500">{{ $t("internshipPage.frame_text2_2")}}</div>
+                    <div class="text-center md:text-xl text-gray-500">
+                        {{ $t("internshipPage.frame_text2_1") }}
+                    </div>
+                    <div class="text-center md:text-xl text-gray-500">
+                        {{ $t("internshipPage.frame_text2_2") }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,14 +107,16 @@
             <div
                 class="text-gray-700 text-center md:p-8 sm:p-4 lg:p-8 font-bold md:text-2xl mt-4"
             >
-            {{ $t("internshipPage.title1")}}
+                {{ $t("internshipPage.title1") }}
             </div>
             <div class="flex flex-col-reverse md:flex-row">
                 <p
                     class="md:pl-4 mt-4 text-gray-500 items-center text-lg font-medium"
                 >
-                {{ $t("internshipPage.text1_1")}}<br /><br />{{ $t("internshipPage.text1_2")}}<br />▶
-                {{ $t("internshipPage.text1_3")}}
+                    {{ $t("internshipPage.text1_1") }}<br /><br />{{
+                        $t("internshipPage.text1_2")
+                    }}<br />▶
+                    {{ $t("internshipPage.text1_3") }}
                 </p>
                 <img
                     src="/assets/img/woman1.jpeg"
@@ -118,7 +128,9 @@
                 <p
                     class="sm:pb-4 text-gray-500 mt-4 sm:mt-4 text-lg font-medium"
                 >
-                {{ $t("internshipPage.text1_4")}}<br /><br />{{ $t("internshipPage.text1_5")}}<br />{{ $t("internshipPage.text1_6")}}
+                    {{ $t("internshipPage.text1_4") }}<br /><br />{{
+                        $t("internshipPage.text1_5")
+                    }}<br />{{ $t("internshipPage.text1_6") }}
                 </p>
                 <img
                     src="/assets/img/guy1.jpg"
@@ -135,23 +147,25 @@
                 <p
                     class="md:pl-4 mt-4 md:pb-8 text-gray-500 text-lg font-medium"
                 >
-                {{ $t("internshipPage.text1_7")}}<br /><br />{{ $t("internshipPage.text1_8")}}<br />{{ $t("internshipPage.text1_9")}}
+                    {{ $t("internshipPage.text1_7") }}<br /><br />{{
+                        $t("internshipPage.text1_8")
+                    }}<br />{{ $t("internshipPage.text1_9") }}
                 </p>
             </div>
             <div class="bg-[#f6fafd] p-4 mt-4">
                 <div class="md:text-2xl text-gray-700 mt-10 font-bold">
-                    {{ $t("internshipPage.title2")}}
+                    {{ $t("internshipPage.title2") }}
                 </div>
                 <p class="text-gray-500 text-lg font-medium break-words py-10">
-                    {{ $t("internshipPage.text2_1")}}
+                    {{ $t("internshipPage.text2_1") }}
                 </p>
             </div>
             <div class="break-word text-lg mt-5 text-gray-500">
                 <p>
-                    {{ $t("internshipPage.text2")}}
+                    {{ $t("internshipPage.text2") }}
                 </p>
                 <p class="mt-5">
-                    {{ $t("internshipPage.text3")}}
+                    {{ $t("internshipPage.text3") }}
                 </p>
             </div>
         </div>
@@ -160,7 +174,7 @@
             <div
                 class="border-collapse border border-1 border-gray-500 text-center font-lg bg-darkblue text-white p-4"
             >
-            {{ $t("internshipPage.table1")}}
+                {{ $t("internshipPage.table1") }}
             </div>
             <table class="table-auto border-gray-500 w-[100%]">
                 <thead>
@@ -168,12 +182,12 @@
                         <th
                             class="border font-normal border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row1_1")}}
+                            {{ $t("internshipPage.table1_row1_1") }}
                         </th>
                         <th
                             class="text-left border border-gray-500 p-5 font-normal text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row1_2")}}
+                            {{ $t("internshipPage.table1_row1_2") }}
                         </th>
                     </tr>
                 </thead>
@@ -182,84 +196,101 @@
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row2_1")}}
+                            {{ $t("internshipPage.table1_row2_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row2_2")}}
+                            {{ $t("internshipPage.table1_row2_2") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row3_1")}}
+                            {{ $t("internshipPage.table1_row3_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row3_21")}}<br />{{ $t("internshipPage.table1_row3_22")}}<br />{{ $t("internshipPage.table1_row3_23")}}<br />{{ $t("internshipPage.table1_row3_24")}}<br />{{ $t("internshipPage.table1_row3_25")}}
+                            {{ $t("internshipPage.table1_row3_21") }}<br />{{
+                                $t("internshipPage.table1_row3_22")
+                            }}<br />{{ $t("internshipPage.table1_row3_23")
+                            }}<br />{{ $t("internshipPage.table1_row3_24")
+                            }}<br />{{ $t("internshipPage.table1_row3_25") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row4_1")}}
+                            {{ $t("internshipPage.table1_row4_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            <a href="http://sakura-tower-yangon.com/"
-                                >{{ $t("internshipPage.table1_row4_21")}}</a
-                            ><br /><a href="http://sakura-residence-yangon.com/"
-                                >{{ $t("internshipPage.table1_row4_22")}}</a
-                            ><br />{{ $t("internshipPage.table1_row4_23")}}<br />{{ $t("internshipPage.table1_row4_24")}}
+                            <a href="http://sakura-tower-yangon.com/">{{
+                                $t("internshipPage.table1_row4_21")
+                            }}</a
+                            ><br /><a
+                                href="http://sakura-residence-yangon.com/"
+                                >{{ $t("internshipPage.table1_row4_22") }}</a
+                            ><br />{{ $t("internshipPage.table1_row4_23")
+                            }}<br />{{ $t("internshipPage.table1_row4_24") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row5_1")}}
+                            {{ $t("internshipPage.table1_row5_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row5_2")}}
+                            {{ $t("internshipPage.table1_row5_2") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                            {{ $t("internshipPage.table1_row55_1")}}
+                            {{ $t("internshipPage.table1_row55_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row55_2")}}
+                            {{ $t("internshipPage.table1_row55_2") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row6_1")}}
+                            {{ $t("internshipPage.table1_row6_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row6_21")}}<br />{{ $t("internshipPage.table1_row6_22")}}<br />{{ $t("internshipPage.table1_row6_23")}}<br />{{ $t("internshipPage.table1_row6_24")}}<br />{{ $t("internshipPage.table1_row6_25")}}
+                            {{ $t("internshipPage.table1_row6_21") }}<br />{{
+                                $t("internshipPage.table1_row6_22")
+                            }}<br />{{ $t("internshipPage.table1_row6_23")
+                            }}<br />{{ $t("internshipPage.table1_row6_24")
+                            }}<br />{{ $t("internshipPage.table1_row6_25") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row7_1")}}
+                            {{ $t("internshipPage.table1_row7_1") }}
                         </td>
                         <td class="border border-gray-500 p-5 text-gray-500">
-                            {{ $t("internshipPage.table1_row7_2")}}
+                            {{ $t("internshipPage.table1_row7_2") }}
                         </td>
                     </tr>
                     <tr>
                         <td
                             class="text-center border border-gray-500 text-gray-500"
                         >
-                        {{ $t("internshipPage.table1_row8_1")}}
+                            {{ $t("internshipPage.table1_row8_1") }}
                         </td>
                         <td class="p-5 border border-gray-500 text-gray-500">
-                            {{ $t("internshipPage.table1_row8_21")}}<br />{{ $t("internshipPage.table1_row8_22")}}<br />{{ $t("internshipPage.table1_row8_23")}}<br />{{ $t("internshipPage.table1_row8_24")}}<br />{{ $t("internshipPage.table1_row8_25")}}<br />{{ $t("internshipPage.table1_row8_26")}}<br />{{ $t("internshipPage.table1_row8_27")}}
+                            {{ $t("internshipPage.table1_row8_21") }}<br />{{
+                                $t("internshipPage.table1_row8_22")
+                            }}<br />{{ $t("internshipPage.table1_row8_23")
+                            }}<br />{{ $t("internshipPage.table1_row8_24")
+                            }}<br />{{ $t("internshipPage.table1_row8_25")
+                            }}<br />{{ $t("internshipPage.table1_row8_26")
+                            }}<br />{{ $t("internshipPage.table1_row8_27") }}
                         </td>
                     </tr>
                 </tbody>
@@ -267,10 +298,10 @@
         </div>
         <div class="grid justify-center">
             <p class="mt-6 text-gray-500 font-normal text-base md:text-lg ml-2">
-                {{ $t("internshipPage.text4")}}
+                {{ $t("internshipPage.text4") }}
             </p>
             <p class="text-gray-500 font-normal text-base md:text-lg ml-2">
-                {{ $t("internshipPage.text5")}}
+                {{ $t("internshipPage.text5") }}
             </p>
         </div>
         <div class="items-center text-center">
@@ -282,16 +313,16 @@
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
                 >
-                {{ $t("internshipPage.button")}}
+                    {{ $t("internshipPage.button") }}
                 </button></a
             >
         </div>
         <div class="md:text-2xl text-gray-700 font-semibold p-4">
             <p class="text-gray-700 text-center font-semibold mb-4">
-                {{ $t("internshipPage.title3")}}
+                {{ $t("internshipPage.title3") }}
             </p>
             <p class="text-gray-700 font-semibold text-start">
-                {{ $t("internshipPage.title3_1")}}
+                {{ $t("internshipPage.title3_1") }}
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2">
@@ -306,12 +337,12 @@
                         <div
                             class="text-center font-medium text-white m-3 border-gray-500"
                         >
-                        {{ $t("internshipPage.table2_row1_1")}}
+                            {{ $t("internshipPage.table2_row1_1") }}
                         </div>
                         <div
                             class="p-2 col-span-6 font-medium text-white text-center border-gray-500"
                         >
-                        {{ $t("internshipPage.table2_row1_2")}}
+                            {{ $t("internshipPage.table2_row1_2") }}
                         </div>
                     </div>
                     <div
@@ -323,8 +354,11 @@
                             1
                         </div>
                         <div class="p-2 col-span-6 font-medium text-gray-500">
-                            {{ $t("internshipPage.table2_row1_21")}} <br />{{ $t("internshipPage.table2_row1_22")}}<br />{{ $t("internshipPage.table2_row1_24")}}
-                            <br />{{ $t("internshipPage.table2_row1_26")}}<br />
+                            {{ $t("internshipPage.table2_row1_21") }} <br />{{
+                                $t("internshipPage.table2_row1_22")
+                            }}<br />{{ $t("internshipPage.table2_row1_24") }}
+                            <br />{{ $t("internshipPage.table2_row1_26")
+                            }}<br />
                         </div>
                     </div>
                     <div
@@ -334,7 +368,7 @@
                             2
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{ $t("internshipPage.table2_row2_2")}}
+                            {{ $t("internshipPage.table2_row2_2") }}
                         </div>
                     </div>
                     <div
@@ -344,7 +378,7 @@
                             3
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{ $t("internshipPage.table2_row3_2")}}
+                            {{ $t("internshipPage.table2_row3_2") }}
                         </div>
                     </div>
                     <div
@@ -354,7 +388,9 @@
                             4
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{ $t("internshipPage.table2_row4_21")}}<br />{{ $t("internshipPage.table2_row5_2")}}
+                            {{ $t("internshipPage.table2_row4_21") }}<br />{{
+                                $t("internshipPage.table2_row5_2")
+                            }}
                         </div>
                     </div>
                     <div
@@ -364,7 +400,7 @@
                             5
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row5_2")}}
+                            {{ $t("internshipPage.table2_row5_2") }}
                         </div>
                     </div>
                     <div
@@ -374,7 +410,7 @@
                             6
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row6_2")}}
+                            {{ $t("internshipPage.table2_row6_2") }}
                         </div>
                     </div>
                     <div
@@ -384,7 +420,7 @@
                             7
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row7_2")}}
+                            {{ $t("internshipPage.table2_row7_2") }}
                         </div>
                     </div>
                     <div
@@ -394,7 +430,7 @@
                             8
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row8_2")}}
+                            {{ $t("internshipPage.table2_row8_2") }}
                         </div>
                     </div>
                     <div
@@ -404,7 +440,7 @@
                             9
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row9_2")}}
+                            {{ $t("internshipPage.table2_row9_2") }}
                         </div>
                     </div>
                     <div
@@ -414,7 +450,9 @@
                             10
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row10_21")}}<br />{{$t("internshipPage.table2_row10_22")}}
+                            {{ $t("internshipPage.table2_row10_21") }}<br />{{
+                                $t("internshipPage.table2_row10_22")
+                            }}
                         </div>
                     </div>
                     <div
@@ -424,7 +462,7 @@
                             11
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row11_2")}}
+                            {{ $t("internshipPage.table2_row11_2") }}
                         </div>
                     </div>
                     <div
@@ -434,7 +472,7 @@
                             12
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row12_2")}}
+                            {{ $t("internshipPage.table2_row12_2") }}
                         </div>
                     </div>
                     <div
@@ -444,7 +482,7 @@
                             13
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row13_2")}}
+                            {{ $t("internshipPage.table2_row13_2") }}
                         </div>
                     </div>
                     <div
@@ -454,7 +492,7 @@
                             14
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table2_row14_2")}}
+                            {{ $t("internshipPage.table2_row14_2") }}
                         </div>
                     </div>
                 </div>
@@ -465,343 +503,52 @@
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-t-2 border-r-2 border-l-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            {{$t("internshipPage.table2_row15_1")}}
+                            {{ $t("internshipPage.table2_row15_1") }}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            {{$t("internshipPage.table2_row15_2")}}
+                            {{ $t("internshipPage.table2_row15_2") }}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            {{$t("internshipPage.table2_row16_1")}}
+                            {{ $t("internshipPage.table2_row16_1") }}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            {{$t("internshipPage.table2_row16_2")}}
+                            {{ $t("internshipPage.table2_row16_2") }}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-b-2 border-l-2 border-r-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            {{$t("internshipPage.table2_row17_1")}}
+                            {{ $t("internshipPage.table2_row17_1") }}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            {{$t("internshipPage.table2_row17_2")}}
+                            {{ $t("internshipPage.table2_row17_2") }}
                         </div>
                     </div>
                 </div>
                 <div class="md:pl-4 mt-5 px-4">
-                    <div
-                        class="image-gallery image-gallery-using-mouse"
-                        aria-live="polite"
-                    >
-                        <div
-                            class="image-gallery-content image-gallery-thumbnails-bottom"
-                        >
-                            <div
-                                class="image-gallery-slide-wrapper image-gallery-thumbnails-bottom"
-                            >
-                                <button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-left-nav"
-                                    aria-label="Previous Slide"
+                    <div class="col-span-1">
+                        <section>
+                            <img :src="currentImage" alt="" class="w-100" />
+                            <div class="grid grid-flow-row grid-cols-5">
+                                <div
+                                    class="flex border"
+                                    v-for="(image, index) in images"
+                                    :key="image.id"
+                                    :class="[
+                                        'thumbnail-image',
+                                        activeImage == index ? 'active' : '',
+                                    ]"
+                                    @click="activateImage(index)"
                                 >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="6 0 12 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polyline
-                                            points="15 18 9 12 15 6"
-                                        ></polyline>
-                                    </svg></button
-                                ><button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-right-nav"
-                                    aria-label="Next Slide"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="6 0 12 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polyline
-                                            points="9 18 15 12 9 6"
-                                        ></polyline>
-                                    </svg>
-                                </button>
-                                <div class="image-gallery-swipe">
-                                    <div class="image-gallery-slides">
-                                        <div
-                                            aria-label="Go to Slide 1"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-center"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    0%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/myanmar_1.png"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 2"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-right"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    100%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol6.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 3"
-                                            tabindex="-1"
-                                            class="image-gallery-slide"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    200%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol7.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 4"
-                                            tabindex="-1"
-                                            class="image-gallery-slide"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    300%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol10.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 5"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-left"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    -100%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol9.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-play-button"
-                                    aria-label="Play or Pause Slideshow"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polygon
-                                            points="5 3 19 12 5 21 5 3"
-                                        ></polygon>
-                                    </svg></button
-                                ><button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-fullscreen-button"
-                                    aria-label="Open Fullscreen"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                        ></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div
-                                class="image-gallery-thumbnails-wrapper image-gallery-thumbnails-bottom thumbnails-swipe-horizontal"
-                            >
-                                <div class="image-gallery-thumbnails">
-                                    <nav
-                                        class="image-gallery-thumbnails-container"
-                                        aria-label="Thumbnail Navigation"
-                                        style="
-                                            transform: translate3d(
-                                                0px,
-                                                0px,
-                                                0px
-                                            );
-                                            transition: all 450ms ease-out 0s;
-                                        "
-                                    >
-                                        <button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="true"
-                                            aria-label="Go to Slide 1"
-                                            class="image-gallery-thumbnail active"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/myanmar_1.png"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 2"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol6.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 3"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol7.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 4"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol10.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 5"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol9.jpg"
-                                            /></span>
-                                        </button>
-                                    </nav>
+                                    <img :src="image.thumb" class="w-full" />
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -810,7 +557,7 @@
             ヤンゴンのランドマークとなったサクラタワーにはICA、三菱商事、日経、NHK等、グローバルに活躍する企業や団体が入居しており、ヨーロッパ、アジアなどの海外からの駐在員や観光客が多く訪れています。
         </p>
         <h1 class="font-bold md:text-2xl text-center text-gray-700 mt-4 mb-4">
-            {{$t("internshipPage.table3_title")}}
+            {{ $t("internshipPage.table3_title") }}
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="flex basis-1/3">
@@ -819,12 +566,12 @@
                         class="divide-gray-500 grid grid-cols-7 divide-x-2 md:ml-5 border-t-2 border-r-2 border-l-2 bg-darkblue border-gray-500"
                     >
                         <div class="text-center font-bold text-white m-3">
-                            {{$t("internshipPage.table3_row0_1")}}
+                            {{ $t("internshipPage.table3_row0_1") }}
                         </div>
                         <div
                             class="p-2 col-span-5 font-bold text-white text-center"
                         >
-                        {{$t("internshipPage.table3_row0_2")}}
+                            {{ $t("internshipPage.table3_row0_2") }}
                         </div>
                     </div>
                     <div
@@ -834,7 +581,9 @@
                             1
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row1_21")}}<br />{{$t("internshipPage.table3_row1_22")}}<br />{{$t("internshipPage.table3_row1_23")}}
+                            {{ $t("internshipPage.table3_row1_21") }}<br />{{
+                                $t("internshipPage.table3_row1_22")
+                            }}<br />{{ $t("internshipPage.table3_row1_23") }}
                         </div>
                     </div>
                     <div
@@ -844,8 +593,8 @@
                             2
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row2_2")}}
-                            <br />{{$t("internshipPage.table3_row2_2_1")}}
+                            {{ $t("internshipPage.table3_row2_2") }}
+                            <br />{{ $t("internshipPage.table3_row2_2_1") }}
                         </div>
                     </div>
                     <div
@@ -855,7 +604,7 @@
                             3
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row3_2")}}
+                            {{ $t("internshipPage.table3_row3_2") }}
                         </div>
                     </div>
                     <div
@@ -865,7 +614,7 @@
                             4
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row4_2")}}
+                            {{ $t("internshipPage.table3_row4_2") }}
                         </div>
                     </div>
                     <div
@@ -875,7 +624,7 @@
                             5
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row5_2")}}
+                            {{ $t("internshipPage.table3_row5_2") }}
                         </div>
                     </div>
                     <div
@@ -885,7 +634,7 @@
                             6
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row6_2")}}
+                            {{ $t("internshipPage.table3_row6_2") }}
                         </div>
                     </div>
                     <div
@@ -895,7 +644,7 @@
                             7
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row7_2")}}
+                            {{ $t("internshipPage.table3_row7_2") }}
                         </div>
                     </div>
                     <div
@@ -905,7 +654,7 @@
                             8
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row8_2")}}
+                            {{ $t("internshipPage.table3_row8_2") }}
                         </div>
                     </div>
                     <div
@@ -915,7 +664,7 @@
                             9
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row9_2")}}
+                            {{ $t("internshipPage.table3_row9_2") }}
                         </div>
                     </div>
                     <div
@@ -925,7 +674,7 @@
                             10
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row10_2")}}
+                            {{ $t("internshipPage.table3_row10_2") }}
                         </div>
                     </div>
                     <div
@@ -935,7 +684,7 @@
                             11
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row11_2")}}
+                            {{ $t("internshipPage.table3_row11_2") }}
                         </div>
                     </div>
                     <div
@@ -945,7 +694,7 @@
                             12
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row12_2")}}
+                            {{ $t("internshipPage.table3_row12_2") }}
                         </div>
                     </div>
                     <div
@@ -955,7 +704,7 @@
                             13
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row13_2")}}
+                            {{ $t("internshipPage.table3_row13_2") }}
                         </div>
                     </div>
                     <div
@@ -965,7 +714,7 @@
                             14
                         </div>
                         <div class="p-2 col-span-5 font-medium text-gray-500">
-                            {{$t("internshipPage.table3_row14_2")}}
+                            {{ $t("internshipPage.table3_row14_2") }}
                         </div>
                     </div>
                 </div>
@@ -976,331 +725,38 @@
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-t-2 border-r-2 border-l-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            {{$t("internshipPage.table3_row15_1")}}
+                            {{ $t("internshipPage.table3_row15_1") }}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            {{$t("internshipPage.table3_row15_2")}}
+                            {{ $t("internshipPage.table3_row15_2") }}
                         </div>
                     </div>
                     <div
                         class="items-center divide-gray-500 grid grid-cols-3 divide-x-2 border-2 border-gray-500"
                     >
                         <div class="text-center font-medium m-3 text-gray-500">
-                            {{$t("internshipPage.table3_row16_1")}}
+                            {{ $t("internshipPage.table3_row16_1") }}
                         </div>
                         <div class="p-2 font-medium text-gray-500 col-span-2">
-                            {{$t("internshipPage.table3_row16_2")}}
+                            {{ $t("internshipPage.table3_row16_2") }}
                         </div>
                     </div>
                 </div>
                 <div class="md:pl-4 px-4">
-                    <div
-                        class="image-gallery image-gallery-using-mouse"
-                        aria-live="polite"
-                    >
-                        <div
-                            class="image-gallery-content image-gallery-thumbnails-bottom"
-                        >
+                    <div class="col-span-1">
+                        <img :src="currentImage1" alt="" class="w-100" />
+                        <div class="grid grid-flow-row grid-cols-5 mt-1 gap-1">
                             <div
-                                class="image-gallery-slide-wrapper image-gallery-thumbnails-bottom"
+                                class="flex border"
+                                v-for="(image, index) in images1"
+                                :key="image.id"
+                                :class="[
+                                    'thumbnail-image',
+                                    activeImage1 == index ? 'active' : '',
+                                ]"
+                                @click="activateImage1(index)"
                             >
-                                <button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-left-nav"
-                                    aria-label="Previous Slide"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="6 0 12 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polyline
-                                            points="15 18 9 12 15 6"
-                                        ></polyline>
-                                    </svg></button
-                                ><button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-right-nav"
-                                    aria-label="Next Slide"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="6 0 12 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polyline
-                                            points="9 18 15 12 9 6"
-                                        ></polyline>
-                                    </svg>
-                                </button>
-                                <div class="image-gallery-swipe">
-                                    <div class="image-gallery-slides">
-                                        <div
-                                            aria-label="Go to Slide 1"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-center"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    0%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol3.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 2"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-right"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    100%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol5.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 3"
-                                            tabindex="-1"
-                                            class="image-gallery-slide"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    200%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol4.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 4"
-                                            tabindex="-1"
-                                            class="image-gallery-slide"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    300%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol1.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                        <div
-                                            aria-label="Go to Slide 5"
-                                            tabindex="-1"
-                                            class="image-gallery-slide image-gallery-left"
-                                            role="button"
-                                            style="
-                                                display: inherit;
-                                                transform: translate3d(
-                                                    -100%,
-                                                    0px,
-                                                    0px
-                                                );
-                                            "
-                                        >
-                                            <img
-                                                class="image-gallery-image"
-                                                src="/assets/img/lol2.jpg"
-                                                alt=""
-                                                srcset=""
-                                                height=""
-                                                width=""
-                                                sizes=""
-                                                title=""
-                                                loading="eager"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-play-button"
-                                    aria-label="Play or Pause Slideshow"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <polygon
-                                            points="5 3 19 12 5 21 5 3"
-                                        ></polygon>
-                                    </svg></button
-                                ><button
-                                    type="button"
-                                    class="image-gallery-icon image-gallery-fullscreen-button"
-                                    aria-label="Open Fullscreen"
-                                >
-                                    <svg
-                                        class="image-gallery-svg"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                        ></path>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div
-                                class="image-gallery-thumbnails-wrapper image-gallery-thumbnails-bottom thumbnails-swipe-horizontal"
-                            >
-                                <div class="image-gallery-thumbnails">
-                                    <nav
-                                        class="image-gallery-thumbnails-container"
-                                        aria-label="Thumbnail Navigation"
-                                        style="
-                                            transform: translate3d(
-                                                0px,
-                                                0px,
-                                                0px
-                                            );
-                                            transition: all 450ms ease-out 0s;
-                                        "
-                                    >
-                                        <button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="true"
-                                            aria-label="Go to Slide 1"
-                                            class="image-gallery-thumbnail active"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol3.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 2"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol5.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 3"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol4.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 4"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol1.jpg"
-                                            /></span></button
-                                        ><button
-                                            type="button"
-                                            tabindex="0"
-                                            aria-pressed="false"
-                                            aria-label="Go to Slide 5"
-                                            class="image-gallery-thumbnail"
-                                        >
-                                            <span
-                                                class="image-gallery-thumbnail-inner"
-                                                ><img
-                                                    class="image-gallery-thumbnail-image"
-                                                    src="/assets/img/lol2.jpg"
-                                            /></span>
-                                        </button>
-                                    </nav>
-                                </div>
+                                <img :src="image.thumb" class="w-full" />
                             </div>
                         </div>
                     </div>
@@ -1308,12 +764,13 @@
             </div>
         </div>
         <p class="mt-10 mb-10 m-4 text-left font-medium text-lg text-gray-500">
-            {{$t("internshipPage.text_frame")}}
+            {{ $t("internshipPage.text_frame") }}
         </p>
         <div class="mx-4">
             <div class="border-2 border-gray-300 rounded-xl mt-5">
                 <h2 class="text-center text-gray-700 md:text-xl font-bold m-4">
-                    <a class="md:text-3xl">\ </a> {{$t("internshipPage.frame2_title1")}}
+                    <a class="md:text-3xl">\ </a>
+                    {{ $t("internshipPage.frame2_title1") }}
                     <a class="md:text-3xl">/ </a>
                 </h2>
                 <div class="flex">
@@ -1335,7 +792,7 @@
                     <p
                         class="flex-1 text-gray-700 font-bold md:text-lg ml-2 mt-8"
                     >
-                    {{$t("internshipPage.frame2_title2")}}
+                        {{ $t("internshipPage.frame2_title2") }}
                     </p>
                 </div>
                 <div
@@ -1344,7 +801,7 @@
                     <p
                         class="md:pr-10 p-2 text-justify font-medium text-gray-500"
                     >
-                    {{$t("internshipPage.frame2_text2_1")}}
+                        {{ $t("internshipPage.frame2_text2_1") }}
                     </p>
                     <img
                         src="/assets/img/7.jpg"
@@ -1361,17 +818,17 @@
                     <p
                         class="flex-1 text-gray-700 font-bold md:text-xl sm:mt-10 pr-5 mt-10 lg:mt-14"
                     >
-                    {{$t("internshipPage.frame2_title3")}}
+                        {{ $t("internshipPage.frame2_title3") }}
                     </p>
                 </div>
                 <div>
                     <p
                         class="text-center text-gray-700 font-bold md:text-lg px-4"
                     >
-                    {{$t("internshipPage.frame2_title4")}}
+                        {{ $t("internshipPage.frame2_title4") }}
                     </p>
                     <p class="text-center m-4 font-medium text-gray-500 mt-5">
-                        {{$t("internshipPage.frame2_text4_1")}}
+                        {{ $t("internshipPage.frame2_text4_1") }}
                     </p>
                 </div>
                 <div class="flex">
@@ -1396,14 +853,14 @@
                         ></path>
                     </svg>
                     <p class="text-gray-700 font-bold md:text-lg p-2 mt-5 ml-5">
-                        {{$t("internshipPage.frame2_title5")}}
+                        {{ $t("internshipPage.frame2_title5") }}
                     </p>
                 </div>
                 <div>
                     <p
                         class="text-center font-medium md:text-lg text-gray-500 mx-4 mt-5 mb-8"
                     >
-                    {{$t("internshipPage.frame2_text5_1")}}
+                        {{ $t("internshipPage.frame2_text5_1") }}
                     </p>
                 </div>
             </div>
@@ -1413,7 +870,7 @@
                 <h2
                     class="font-bold md:text-2xl text-gray-700 text-center my-6"
                 >
-                {{$t("internshipPage.frame2_title1")}}
+                    {{ $t("internshipPage.frame2_title1") }}
                 </h2>
                 <img
                     src="/assets/img/border.png"
@@ -1434,7 +891,7 @@
                         関原夕希子 （Yukiko Sekihara）<br />Sales Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text7")}}
+                        {{ $t("internshipPage.text7") }}
                     </p>
                 </div>
             </div>
@@ -1451,7 +908,7 @@
                         Cherry Aung　<br />General Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text8")}}
+                        {{ $t("internshipPage.text8") }}
                     </p>
                 </div>
             </div>
@@ -1468,7 +925,7 @@
                         Zar Ni Lwin　<br />Residence Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text9")}}
+                        {{ $t("internshipPage.text9") }}
                     </p>
                 </div>
             </div>
@@ -1485,7 +942,7 @@
                         堀越美緒（Mio Horikoshi）　<br />Sales Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text10")}}
+                        {{ $t("internshipPage.text10") }}
                     </p>
                 </div>
             </div>
@@ -1502,7 +959,7 @@
                         Phyoe Wai Moe　<br />YangonYangon Bar Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text11")}}
+                        {{ $t("internshipPage.text11") }}
                     </p>
                 </div>
             </div>
@@ -1519,7 +976,7 @@
                         白井竜太（Ryuta Shirai）　<br />Deputy Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text12")}}
+                        {{ $t("internshipPage.text12") }}
                     </p>
                 </div>
             </div>
@@ -1536,7 +993,7 @@
                         下山徹（Toru Shimoyama）　<br />Sales Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text13")}}
+                        {{ $t("internshipPage.text13") }}
                     </p>
                 </div>
             </div>
@@ -1553,7 +1010,7 @@
                         Myo Zaw Oo　<br />Residence Assistant Manager
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text14")}}
+                        {{ $t("internshipPage.text14") }}
                     </p>
                 </div>
             </div>
@@ -1570,14 +1027,14 @@
                         寺田 敏秀（Toshihide Terada）　<br />Myanmar Director
                     </h3>
                     <p class="text-gray-500 text-justify mx-4 my-2">
-                        {{$t("internshipPage.text15")}}
+                        {{ $t("internshipPage.text15") }}
                     </p>
                 </div>
             </div>
         </div>
         <div>
             <h2 class="font-bold text-2xl text-gray-700 text-center my-4">
-                <a class="text-3xl">\ </a>{{$t("internshipPage.title5")}}
+                <a class="text-3xl">\ </a>{{ $t("internshipPage.title5") }}
                 <a class="text-3xl">/ </a>
             </h2>
             <div class="md:px-12 px-4">
@@ -1587,7 +1044,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors text-blue-gray-900 accor-header"
                     >
                         <p class="text-gray-700">
-                            {{$t("internshipPage.question1")}}
+                            {{ $t("internshipPage.question1") }}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1607,7 +1064,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal accor-body"
                         >
                             <p class="text-gray-500">
-                                {{$t( "internshipPage.answer1")}}
+                                {{ $t("internshipPage.answer1") }}
                             </p>
                         </div>
                     </div>
@@ -1618,7 +1075,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            {{$t("internshipPage.question2")}}
+                            {{ $t("internshipPage.question2") }}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1638,7 +1095,7 @@
                             class="block w-full py-4 antialiased font-sans text-sm font-light leading-normal text-gray-700"
                         >
                             <p class="text-gray-500">
-                                {{$t("internshipPage.answer2")}}
+                                {{ $t("internshipPage.answer2") }}
                             </p>
                         </div>
                     </div>
@@ -1649,7 +1106,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            {{$t("internshipPage.question3")}}
+                            {{ $t("internshipPage.question3") }}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1669,7 +1126,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                         >
                             <p class="text-gray-500">
-                                {{$t("internshipPage.answer3")}}
+                                {{ $t("internshipPage.answer3") }}
                             </p>
                         </div>
                     </div>
@@ -1680,7 +1137,7 @@
                         class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                     >
                         <p class="text-gray-700">
-                            {{$t("internshipPage.question4")}}
+                            {{ $t("internshipPage.question4") }}
                         </p>
                         <span class="w-5 h-5 ml-4"
                             ><svg
@@ -1700,7 +1157,7 @@
                             class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                         >
                             <p class="text-gray-500">
-                                {{$t("internshipPage.answer4")}}
+                                {{ $t("internshipPage.answer4") }}
                             </p>
                         </div>
                     </div>
@@ -1715,7 +1172,7 @@
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
                     >
-                    {{$t("internshipPage.button")}}
+                        {{ $t("internshipPage.button") }}
                     </button></a
                 >
             </div>
@@ -1723,5 +1180,114 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            images: [
+                {
+                    id: "1",
+                    big: "/assets/img/lol10.jpg",
+                    thumb: "/assets/img/lol10.jpg",
+                },
+                {
+                    id: "2",
+                    big: "/assets/img/lol6.jpg",
+                    thumb: "/assets/img/lol6.jpg",
+                },
+                {
+                    id: "3",
+                    big: "/assets/img/lol7.jpg",
+                    thumb: "/assets/img/lol7.jpg",
+                },
+                {
+                    id: "4",
+                    big: "/assets/img/lol8.jpg",
+                    thumb: "/assets/img/lol8.jpg",
+                },
+                {
+                    id: "5",
+                    big: "/assets/img/lol9.jpg",
+                    thumb: "/assets/img/lol9.jpg",
+                },
+            ],
+            images1: [
+                {
+                    id: "1",
+                    big: "/assets/img/lol1.jpg",
+                    thumb: "/assets/img/lol1.jpg",
+                },
+                {
+                    id: "2",
+                    big: "/assets/img/lol2.jpg",
+                    thumb: "/assets/img/lol2.jpg",
+                },
+                {
+                    id: "3",
+                    big: "/assets/img/lol3.jpg",
+                    thumb: "/assets/img/lol3.jpg",
+                },
+                {
+                    id: "4",
+                    big: "/assets/img/lol4.jpg",
+                    thumb: "/assets/img/lol4.jpg",
+                },
+                {
+                    id: "5",
+                    big: "/assets/img/lol5.jpg",
+                    thumb: "/assets/img/lol5.jpg",
+                },
+            ],
+            activeImage: 0,
+            activeImage1: 0,
+        };
+    },
+    computed: {
+        currentImage() {
+            return this.images[this.activeImage].big;
+        },
+        currentImage1() {
+            return this.images1[this.activeImage1].big;
+        },
+    },
+    methods: {
+        nextImage() {
+            var active = this.activeImage + 1;
+            if (active >= this.images.length) {
+                active = 0;
+            }
+            this.activateImage(active);
+        },
+
+        prevImage() {
+            var active = this.activeImage - 1;
+            if (active < 0) {
+                active = this.images.length - 1;
+            }
+            this.activateImage(active);
+        },
+
+        activateImage(imageIndex) {
+            this.activeImage = imageIndex;
+        },
+
+        nextImage1() {
+            var active = this.activeImage1 + 1;
+            if (active >= this.images1.length) {
+                active = 0;
+            }
+            this.activateImage1(active);
+        },
+
+        prevImage1() {
+            var active = this.activeImage1 - 1;
+            if (active < 0) {
+                active = this.images1.length - 1;
+            }
+            this.activateImage1(active);
+        },
+        activateImage1(imageIndex1) {
+            this.activeImage1 = imageIndex1;
+        },
+    },
+};
 </script>

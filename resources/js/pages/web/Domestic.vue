@@ -14,7 +14,7 @@
             <div
                 class="flex h-full items-center justify-center text-center text-white"
             >
-                <h1 class="mb-6 text-2xl md:text-4xl font-bold">
+                <h1 class="mb-6 text-2xl md:text-4xl font-bold" style="font-size: 1.5rem !important;">
                     {{ $t("domesticPage.head_title") }}
                 </h1>
             </div>

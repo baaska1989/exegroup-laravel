@@ -12,7 +12,7 @@
             style="background-color: rgba(0, 0, 0, 0)"
         >
             <div class="pt-24 md:pt-40 text-center text-white py-8 md:py-9">
-                <h1 class="mb-6 text-2xl md:text-3xl font-bold items-center">
+                <h1 class="mb-6 text-2xl md:text-3xl font-bold items-center" style="font-size: 1.5rem !important;">
                     {{ $t("recruitPage.head_title1")}}
                 </h1>
             </div>

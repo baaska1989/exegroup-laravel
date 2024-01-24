@@ -14,7 +14,13 @@
             <div
                 class="flex h-full items-center justify-center text-center text-white"
             >
-                <h1 class="mb-6 text-2xl md:text-4xl font-bold">
+                <h1
+                    class="mb-6 font-bold"
+                    style="
+                        font-size: 1.875rem !important;
+                        line-height: 2.25rem !important;
+                    "
+                >
                     {{ $t("mongoliaPage.head_title") }}
                 </h1>
             </div>
@@ -25,16 +31,21 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="px-4 md:pl-10 col-span-1">
                 <h1
-                    class="font-bold text-2xl md:text-3xl text-gray-700 mt-8 text-center md:text-left"
+                    class="font-bold text-2xl md:text-3xl text-gray-700 mt-8 text-center md:text-left" style="
+                        font-size: 1.875rem !important;
+                        line-height: 2.25rem !important;
+                    "
                 >
-                {{ $t("mongoliaPage.title1") }}<br />{{ $t("mongoliaPage.title1_1") }}
+                    {{ $t("mongoliaPage.title1") }}<br />{{
+                        $t("mongoliaPage.title1_1")
+                    }}
                 </h1>
                 <div class="lg:flex block">
                     <div class="flex text-left">
                         <div
                             class="text-lg font-medium w-auto lg:h-auto md:py-4 pb-8 text-gray-500 max-w-4xl py-4 indent-4"
                         >
-                        {{ $t("mongoliaPage.text1_1") }}<br /><br />
+                            {{ $t("mongoliaPage.text1_1") }}<br /><br />
                             <p>
                                 {{ $t("mongoliaPage.text1_2") }}
                             </p>
@@ -46,350 +57,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-1 md:mt-12 md:p-8 p-4">
-                <div
-                    class="image-gallery image-gallery-using-mouse"
-                    aria-live="polite"
-                >
+            <div class="col-span-1 p-4">
+                <img :src="currentImage" alt="" class="w-100" />
+                <div class="grid grid-flow-row grid-cols-5">
                     <div
-                        class="image-gallery-content image-gallery-thumbnails-bottom"
+                        class="flex border"
+                        v-for="(image, index) in images"
+                        :key="image.id"
+                        :class="[
+                            'thumbnail-image',
+                            activeImage == index ? 'active' : '',
+                        ]"
+                        @click="activateImage(index)"
                     >
-                        <div
-                            class="image-gallery-slide-wrapper image-gallery-thumbnails-bottom"
-                        >
-                            <button
-                                type="button"
-                                class="image-gallery-icon image-gallery-left-nav"
-                                aria-label="Previous Slide"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="6 0 12 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline
-                                        points="15 18 9 12 15 6"
-                                    ></polyline>
-                                </svg></button
-                            ><button
-                                type="button"
-                                class="image-gallery-icon image-gallery-right-nav"
-                                aria-label="Next Slide"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="6 0 12 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline
-                                        points="9 18 15 12 9 6"
-                                    ></polyline>
-                                </svg>
-                            </button>
-                            <div class="image-gallery-swipe">
-                                <div class="image-gallery-slides">
-                                    <div
-                                        aria-label="Go to Slide 1"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-center"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                0%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol12.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 2"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-right"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                100%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol11.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 3"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                200%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/school01.jpg"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 4"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                300%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/school02.jpg"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 5"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                400%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/school03.jpg"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 6"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-left"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                -100%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/exe-school.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <button
-                                type="button"
-                                class="image-gallery-icon image-gallery-play-button"
-                                aria-label="Play or Pause Slideshow"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polygon
-                                        points="5 3 19 12 5 21 5 3"
-                                    ></polygon>
-                                </svg></button
-                            ><button
-                                type="button"
-                                class="image-gallery-icon image-gallery-fullscreen-button"
-                                aria-label="Open Fullscreen"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                    ></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div
-                            class="image-gallery-thumbnails-wrapper image-gallery-thumbnails-bottom thumbnails-swipe-horizontal"
-                        >
-                            <div class="image-gallery-thumbnails">
-                                <nav
-                                    class="image-gallery-thumbnails-container"
-                                    aria-label="Thumbnail Navigation"
-                                    style="
-                                        transform: translate3d(0px, 0px, 0px);
-                                        transition: all 450ms ease-out 0s;
-                                    "
-                                >
-                                    <button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="true"
-                                        aria-label="Go to Slide 1"
-                                        class="image-gallery-thumbnail active"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol12.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 2"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol11.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 3"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/school01.jpg"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 4"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/school02.jpg"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 5"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/school03.jpg"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 6"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/exe-school.png"
-                                        /></span>
-                                    </button>
-                                </nav>
-                            </div>
-                        </div>
+                        <img :src="image.thumb" class="w-full" />
                     </div>
                 </div>
             </div>
@@ -397,9 +78,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="px-4 md:pl-10 col-span-1">
                 <h1
-                    class="font-bold text-2xl md:text-3xl text-gray-700 mt-8 text-center md:text-left"
+                    class="font-bold text-2xl text-gray-700 mt-8 text-center md:text-left" style="font-size: 1.875rem !important;
+    line-height: 2.25rem !important;"
                 >
-                {{ $t("mongoliaPage.title2") }}
+                    {{ $t("mongoliaPage.title2") }}
                 </h1>
                 <div class="lg:flex block">
                     <div class="flex text-justify">
@@ -413,355 +95,27 @@
                             <p>
                                 {{ $t("mongoliaPage.text2_2") }}
                             </p>
-                            <br /> {{ $t("mongoliaPage.text2_3") }}<br />
+                            <br />
+                            {{ $t("mongoliaPage.text2_3") }}<br />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-span-1 md:mt-12 md:p-8 p-4">
-                <div
-                    class="image-gallery image-gallery-using-mouse"
-                    aria-live="polite"
-                >
+
+            <div class="col-span-1">
+                <img :src="currentImage1" alt="" class="w-100" />
+                <div class="grid grid-flow-row grid-cols-5 mt-1 gap-1">
                     <div
-                        class="image-gallery-content image-gallery-thumbnails-bottom"
+                        class="flex border"
+                        v-for="(image, index) in images1"
+                        :key="image.id"
+                        :class="[
+                            'thumbnail-image',
+                            activeImage1 == index ? 'active' : '',
+                        ]"
+                        @click="activateImage1(index)"
                     >
-                        <div
-                            class="image-gallery-slide-wrapper image-gallery-thumbnails-bottom"
-                        >
-                            <button
-                                type="button"
-                                class="image-gallery-icon image-gallery-left-nav"
-                                aria-label="Previous Slide"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="6 0 12 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline
-                                        points="15 18 9 12 15 6"
-                                    ></polyline>
-                                </svg></button
-                            ><button
-                                type="button"
-                                class="image-gallery-icon image-gallery-right-nav"
-                                aria-label="Next Slide"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="6 0 12 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline
-                                        points="9 18 15 12 9 6"
-                                    ></polyline>
-                                </svg>
-                            </button>
-                            <div class="image-gallery-swipe">
-                                <div class="image-gallery-slides">
-                                    <div
-                                        aria-label="Go to Slide 1"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-center"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                0%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol16.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 2"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-right"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                100%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol18.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 3"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                200%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol17.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 4"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                300%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/lol19.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 5"
-                                        tabindex="-1"
-                                        class="image-gallery-slide"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                400%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/finance.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                    <div
-                                        aria-label="Go to Slide 6"
-                                        tabindex="-1"
-                                        class="image-gallery-slide image-gallery-left"
-                                        role="button"
-                                        style="
-                                            display: inherit;
-                                            transform: translate3d(
-                                                -100%,
-                                                0px,
-                                                0px
-                                            );
-                                        "
-                                    >
-                                        <img
-                                            class="image-gallery-image"
-                                            src="/assets/img/value.png"
-                                            alt=""
-                                            srcset=""
-                                            height=""
-                                            width=""
-                                            sizes=""
-                                            title=""
-                                            loading="eager"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <button
-                                type="button"
-                                class="image-gallery-icon image-gallery-play-button"
-                                aria-label="Play or Pause Slideshow"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polygon
-                                        points="5 3 19 12 5 21 5 3"
-                                    ></polygon>
-                                </svg></button
-                            ><button
-                                type="button"
-                                class="image-gallery-icon image-gallery-fullscreen-button"
-                                aria-label="Open Fullscreen"
-                            >
-                                <svg
-                                    class="image-gallery-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <path
-                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
-                                    ></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div
-                            class="image-gallery-thumbnails-wrapper image-gallery-thumbnails-bottom thumbnails-swipe-horizontal"
-                        >
-                            <div class="image-gallery-thumbnails">
-                                <nav
-                                    class="image-gallery-thumbnails-container"
-                                    aria-label="Thumbnail Navigation"
-                                    style="
-                                        transform: translate3d(0px, 0px, 0px);
-                                        transition: all 450ms ease-out 0s;
-                                    "
-                                >
-                                    <button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="true"
-                                        aria-label="Go to Slide 1"
-                                        class="image-gallery-thumbnail active"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol16.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 2"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol18.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 3"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol17.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 4"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/lol19.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 5"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/finance.png"
-                                        /></span></button
-                                    ><button
-                                        type="button"
-                                        tabindex="0"
-                                        aria-pressed="false"
-                                        aria-label="Go to Slide 6"
-                                        class="image-gallery-thumbnail"
-                                    >
-                                        <span
-                                            class="image-gallery-thumbnail-inner"
-                                            ><img
-                                                class="image-gallery-thumbnail-image"
-                                                src="/assets/img/value.png"
-                                        /></span>
-                                    </button>
-                                </nav>
-                            </div>
-                        </div>
+                        <img :src="image.thumb" class="w-full" />
                     </div>
                 </div>
             </div>
@@ -772,5 +126,113 @@
 <script>
 export default {
     name: "Mongolia",
+    data() {
+        return {
+            images: [
+                {
+                    id: "1",
+                    big: "/assets/img/lol12.png",
+                    thumb: "/assets/img/lol12.png",
+                },
+                {
+                    id: "2",
+                    big: "/assets/img/lol11.png",
+                    thumb: "/assets/img/lol11.png",
+                },
+                {
+                    id: "3",
+                    big: "/assets/img/school01.jpg",
+                    thumb: "/assets/img/school01.jpg",
+                },
+                {
+                    id: "4",
+                    big: "/assets/img/school02.jpg",
+                    thumb: "/assets/img/school02.jpg",
+                },
+                {
+                    id: "5",
+                    big: "/assets/img/school03.jpg",
+                    thumb: "/assets/img/school03.jpg",
+                },
+            ],
+            images1: [
+                {
+                    id: "1",
+                    big: "/assets/img/lol16.png",
+                    thumb: "/assets/img/lol16.png",
+                },
+                {
+                    id: "2",
+                    big: "/assets/img/lol18.png",
+                    thumb: "/assets/img/lol18.png",
+                },
+                {
+                    id: "3",
+                    big: "/assets/img/lol17.png",
+                    thumb: "/assets/img/lol17.png",
+                },
+                {
+                    id: "4",
+                    big: "/assets/img/lol19.png",
+                    thumb: "/assets/img/lol19.png",
+                },
+                {
+                    id: "5",
+                    big: "/assets/img/finance.png",
+                    thumb: "/assets/img/finance.png",
+                },
+            ],
+            activeImage: 0,
+            activeImage1: 0,
+        };
+    },
+    computed: {
+        currentImage() {
+            return this.images[this.activeImage].big;
+        },
+        currentImage1() {
+            return this.images1[this.activeImage1].big;
+        },
+    },
+    methods: {
+        nextImage() {
+            var active = this.activeImage + 1;
+            if (active >= this.images.length) {
+                active = 0;
+            }
+            this.activateImage(active);
+        },
+
+        prevImage() {
+            var active = this.activeImage - 1;
+            if (active < 0) {
+                active = this.images.length - 1;
+            }
+            this.activateImage(active);
+        },
+
+        activateImage(imageIndex) {
+            this.activeImage = imageIndex;
+        },
+
+        nextImage1() {
+            var active = this.activeImage1 + 1;
+            if (active >= this.images1.length) {
+                active = 0;
+            }
+            this.activateImage1(active);
+        },
+
+        prevImage1() {
+            var active = this.activeImage1 - 1;
+            if (active < 0) {
+                active = this.images1.length - 1;
+            }
+            this.activateImage1(active);
+        },
+        activateImage1(imageIndex1) {
+            this.activeImage1 = imageIndex1;
+        },
+    },
 };
 </script>

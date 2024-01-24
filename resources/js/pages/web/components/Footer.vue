@@ -8,7 +8,7 @@
                     class="sm:col-span-1 md:col-span-3 lg:col-span-4 max-w-lg md:pl-4 mt-4 md:p-4"
                 >
                     <h2 class="ml-4 underline text-gray-300 text-base mb-8">
-                       {{ $t("footer.contactUs") }}
+                        {{ $t("footer.contactUs") }}
                     </h2>
                     <ul class="text-gray-300 pl-4 list-none w-full">
                         <div class="flex">
@@ -26,9 +26,9 @@
                             </svg>
                             <li class="font-bold text-base">
                                 <font style="vertical-align: inherit"
-                                    ><font style="vertical-align: inherit"
-                                        >{{ $t("footer.address")}}</font
-                                    ></font
+                                    ><font style="vertical-align: inherit">{{
+                                        $t("footer.address")
+                                    }}</font></font
                                 >
                             </li>
                         </div>
@@ -46,7 +46,7 @@
                                 ></path>
                             </svg>
                             <li class="font-bold text-base">
-                                {{ $t("footer.phone")}}
+                                {{ $t("footer.phone") }}
                             </li>
                         </div>
                         <div class="flex mt-5">
@@ -68,7 +68,7 @@
                                     class="font-bold hover:text-blue-500 text-base sm:my-4 py-4"
                                     style="padding-bottom: 10px"
                                 >
-                                {{ $t("footer.email")}}
+                                    {{ $t("footer.email") }}
                                 </a>
                             </li>
                         </div>
@@ -79,9 +79,9 @@
                 >
                     <h2 class="mb-5 text-gray-300 text-base underline">
                         <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit"
-                                >{{ $t("footer.about") }}</font
-                            ></font
+                            ><font style="vertical-align: inherit">{{
+                                $t("footer.about")
+                            }}</font></font
                         >
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
@@ -91,8 +91,11 @@
                                 href="/about/"
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >{{ $t("footer.companyOverview") }}</font
+                                        ><font
+                                            style="vertical-align: inherit"
+                                            >{{
+                                                $t("footer.companyOverview")
+                                            }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -105,9 +108,9 @@
                 >
                     <h2 class="underline mb-5 text-gray-300 text-base">
                         <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit"
-                                >{{ $t("footer.projects") }}</font
-                            ></font
+                            ><font style="vertical-align: inherit">{{
+                                $t("footer.projects")
+                            }}</font></font
                         >
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
@@ -116,8 +119,11 @@
                                 class="font-bold py-2 flex items-center text-base text-gray-300"
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >{{ $t("footer.overseasProjects") }}</font
+                                        ><font
+                                            style="vertical-align: inherit"
+                                            >{{
+                                                $t("footer.overseasProjects")
+                                            }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -163,8 +169,11 @@
                                 href="/domestic/"
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >{{ $t("footer.domesticProjects") }}</font
+                                        ><font
+                                            style="vertical-align: inherit"
+                                            >{{
+                                                $t("footer.domesticProjects")
+                                            }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -177,8 +186,8 @@
                 >
                     <h2 class="mb-5 text-gray-300 text-base underline">
                         <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit"
-                                > {{ $t("footer.inter") }}</font
+                            ><font style="vertical-align: inherit">
+                                {{ $t("footer.inter") }}</font
                             ></font
                         >
                     </h2>
@@ -189,7 +198,8 @@
                                 href="/intership/"
                                 ><span class=" "
                                     ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
+                                        ><font
+                                            style="vertical-align: inherit"
                                             >{{ $t("footer.internship") }}</font
                                         ></font
                                     ></span
@@ -202,7 +212,8 @@
                                 href="/recruit/"
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
+                                        ><font
+                                            style="vertical-align: inherit"
                                             >{{ $t("footer.newGrad") }}</font
                                         ></font
                                     ></span
@@ -212,22 +223,19 @@
                     </ul>
                 </div>
             </div>
-            <a
+            <!-- <a
                 class="to-top-button show px-3 py-2 mb-16 mr-8 border text-[12px] rounded-lg duration-300 bg-white"
-                href="#"
-                ><i class="fa-sharp fa-solid fa-arrow-up"></i
-            ></a>
+                href="#" style="float: right;"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+                </a> -->
             <div
                 class="text-center text-sm font-bold bg-darkblue text-gray-300 p-2"
             >
-                <div style="vertical-align: inherit"
-                    ><div style="vertical-align: inherit"
-                        >
-                        {{ $t("footer.copyRight") }} 
-                        
-                        </div
-                    ></div
-                >
+                <div style="vertical-align: inherit">
+                    <div style="vertical-align: inherit">
+                        {{ $t("footer.copyRight") }}
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

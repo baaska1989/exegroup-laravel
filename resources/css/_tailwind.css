@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    font-size: inherit !important;
+    font-weight: inherit;
+}
+
+.text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity)) !important;
+}
+
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(78 81 82/var(--tw-text-opacity)) !important;
+}
