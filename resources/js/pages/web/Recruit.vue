@@ -12,15 +12,15 @@
         >
             <div class="pt-24 md:pt-40 text-center text-white py-8 md:py-9">
                 <h1 class="mb-6 text-2xl md:text-3xl font-bold items-center">
-                    リクルート
+                    {{ $t("recruitPage.head_title1")}}
                 </h1>
             </div>
             <div
                 class="text-sm pl-8 md:pl-16 md:text-2xl lg:text-3xl lg:mt-16 font-bold justify-start text-white"
             >
-                <h3>変化こそチャンスである。</h3>
+                <h3>{{ $t("recruitPage.head_title2")}}</h3>
                 <h3 class="ml-4">
-                    人と同じではなく自分なりの価値観を信じよう。
+                    {{ $t("recruitPage.head_title3")}}
                 </h3>
             </div>
         </div>
@@ -30,13 +30,13 @@
             class="mx-auto font-medium text-lg text-left p-4 md:px-24 text-gray-500"
         >
             <p class="mt-4">
-                当社が常に掲げてきた信念は、「変化こそチャンスである」ということです。時代の変化にたじろぐことなく、不安定化をむしろビジネスチャンスと捉えていくのが当社のスピリットです。
+                {{ $t("recruitPage.text1")}}
             </p>
             <h1 class="mt-2">
-                投資に関する信念は、「人」に対する信念にもつながります。
+                {{ $t("recruitPage.text2")}}
             </h1>
             <p class="mt-2">
-                当社は人材への投資こそ最高の投資であると考えて、「自ら変化を求める人材」、「人と同じではなく自分なりの価値観を持っている人材」を常に求めております。
+                {{ $t("recruitPage.text3")}}
             </p>
         </div>
         <div class="md:py-4 p-4">
@@ -44,16 +44,16 @@
                 class="md:mt-4 md:mx-20 border-2 border-gray-600 bg-darkblue h-14"
             >
                 <p class="text-center text-lg font-medium text-white mt-3">
-                    求人票
+                    {{ $t("recruitPage.table_title")}}
                 </p>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-t-darkblue border-r-darkblue border-l-darkblue items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    採用職種
+                    {{ $t("recruitPage.row1_1")}}
                 </div>
-                <div class="p-2 col-span-2m text-gray-500">総合職</div>
+                <div class="p-2 col-span-2m text-gray-500">{{ $t("recruitPage.row1_2")}}</div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-t-darkblue border-r-darkblue border-l-darkblue items-center"
@@ -61,134 +61,131 @@
                 <div
                     class="text-center font-medium mt-48 md:mt-28 text-gray-500"
                 >
-                    採用職種詳細
+                {{ $t("recruitPage.row2_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    ■ プロジェクトマネジメント業務
-                    <br />ミャンマーにて所有するオフィスビル、サービスアパートメント、ホテル、レストランに関わる業務全般を担当いただきます。<br />※
-                    セールス、エンジニアリング、アカウンティング、人事・総務関連など<br />■
-                    サクラタワー <br />ヤンゴンのランドマークタワー
-                    <br />多くの日本企業がオフィスを構え、最上階に位置する屋上のバー「ヤンゴンヤンゴン」はミャンマーにおけるエンターテイメントの発信地となっている。<br />■
-                    サクラレジデンス
-                    <br />ヤンゴン最大の規模を誇る長期滞在者向けのアパートメント
+                    {{ $t("recruitPage.row2_21")}}
+                    <br />{{ $t("recruitPage.row2_22")}}<br />※
+                    {{ $t("recruitPage.row2_23")}}<br />{{ $t("recruitPage.row2_24")}} <br />{{ $t("recruitPage.row2_25")}}
+                    <br />{{ $t("recruitPage.row2_26")}}<br />{{ $t("recruitPage.row2_27")}}
+                    <br />{{ $t("recruitPage.row2_28")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    雇用形態
+                    {{ $t("recruitPage.row3_1")}}
                 </div>
-                <div class="p-2 col-span-2 text-gray-500">正社員</div>
+                <div class="p-2 col-span-2 text-gray-500">{{ $t("recruitPage.row3_2")}}</div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium mt-8 md:m-6 text-gray-500">
-                    エントリー/採用方法
+                    {{ $t("recruitPage.row4_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    書類審査・面接試験・英語試験
-                    <br />1週間のヤンゴンでのインターンシップ研修により最終判断
+                    {{ $t("recruitPage.row4_21")}}
+                    <br />{{ $t("recruitPage.row4_22")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium mt-10 md:m-6 text-gray-500">
-                    選考方法・重視点
+                    {{ $t("recruitPage.row5_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    アジアに興味ある方。アジアが大好きな方。<br />度胸と愛嬌のある方。ミャンマー語に興味ある方歓迎。
+                    {{ $t("recruitPage.row5_21")}}<br />{{ $t("recruitPage.row5_22")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    提出書類・その他選考
+                    {{ $t("recruitPage.row6_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    履歴書　※中途の方は職務経歴書もご提出ください。
+                    {{ $t("recruitPage.row6_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-6 md:m-3 text-gray-500">
-                    想定年収
+                    {{ $t("recruitPage.row7_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    年収：280万~500万　※詳細は初回面接時にご説明します。
+                    {{ $t("recruitPage.row7_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    昇給・賞与・諸手当
+                    {{ $t("recruitPage.row8_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    昇給あり、賞与あり
+                    {{ $t("recruitPage.row8_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    勤務地
+                    {{ $t("recruitPage.row9_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    ミャンマー（ヤンゴン）
+                    {{ $t("recruitPage.row9_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium mt-7 md:m-3 text-gray-500">
-                    勤務時間
+                    {{ $t("recruitPage.row10_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    サクラタワー8:30~17:30　ホテル・レジデンス・レストラン・バー5:30~23:00（シフト制）
+                    {{ $t("recruitPage.row10_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium mt-6 md:m-3 text-gray-500">
-                    福利厚生
+                    {{ $t("recruitPage.row11_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    勤務年数報酬制度あり、社宅あり、送迎あり、食事手当
+                    {{ $t("recruitPage.row11_2")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    社会保険
+                    {{ $t("recruitPage.row12_1")}}
                 </div>
-                <div class="p-2 col-span-2 text-gray-500">加入</div>
+                <div class="p-2 col-span-2 text-gray-500">{{ $t("recruitPage.row12_2")}}</div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mr-20 md:ml-20 border-t-2 border-r-2 border-l-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium mt-8 md:m-7 text-gray-500">
-                    休日休暇
+                    {{ $t("recruitPage.row13_1")}}
                 </div>
                 <div class="col-span-2 p-2 text-gray-500">
-                    月4～8日（シフト制含む） <br />※
-                    担当業務やイベント時期により変動、ミャンマー暦に準ずる
+                    {{ $t("recruitPage.row13_21")}}<br />{{ $t("recruitPage.row13_22")}}
                 </div>
             </div>
             <div
                 class="divide-darkblue grid grid-cols-3 divide-x md:mb-12 md:mx-20 border-2 border-gray-600 items-center"
             >
                 <div class="text-center font-medium m-3 text-gray-500">
-                    教育研修
+                    {{ $t("recruitPage.row14_1")}}
                 </div>
                 <div class="p-2 col-span-2 text-gray-500">
-                    必要に応じ支援制度あり
+                    {{ $t("recruitPage.row14_2")}}
                 </div>
             </div>
         </div>
@@ -197,7 +194,7 @@
                 <h2
                     class="font-bold text-2xl md:text-3xl text-gray-700 text-center mt-5"
                 >
-                    採用担当からのメッセージ
+                {{ $t("recruitPage.title1")}}
                 </h2>
                 <img
                     src="/assets/img/border.png"
@@ -222,9 +219,7 @@
                         <p
                             class="lg:-mt-40 font-medium text-lg m-4 md:mr-20 font-lg sm:-mt-32 -mt-32 text-gray-500"
                         >
-                            日本人事としてインターン生、新卒・中途採用を担当しています。大学卒業後、外資系大手人材会社にて10年在籍し
-                            現在は株式会社エクセの人事を担当。「変化こそチャンスである」は、創業当初からの弊社の信念となります。
-                            自分なりの価値の確立を目指し、未来を切り開こうとする姿勢を全力で応援しています。興味のある方はお気軽にお問い合わせください！！
+                        {{ $t("recruitPage.text4")}}
                         </p>
                     </div>
                 </div>
@@ -234,7 +229,7 @@
                     <h2
                         class="font-bold text-2xl md:text-3xl text-gray-700 text-center md:m-4"
                     >
-                        よくある質問
+                    {{ $t("recruitPage.title2")}}
                     </h2>
                     <div class="md:px-20 px-4">
                         <div class="block relative w-full">
@@ -243,7 +238,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    ミャンマーってどんな国ですか？
+                                    {{ $t("recruitPage.question1")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -263,7 +258,7 @@
                                     class="block w-full py-4 antialiased font-sans text-sm font-light leading-normal text-medium"
                                 >
                                     <p class="text-gray-500 font-lg">
-                                        『アジア最後のフロンティア』と呼ばれるミャンマー。人口は5380万人、135の民族による多民族国家であり、イギリスの旧植民地でビルマ語と英語を利用します。国民の約9割が仏教徒で街中には仏塔（パゴダ）が並びます。素朴で穏やかな優しい人が多く、気質は日本人に似ているとも言われます。
+                                        {{ $t("recruitPage.answer1")}}
                                     </p>
                                 </div>
                             </div>
@@ -274,7 +269,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    英語はどれくらい利用しますか？
+                                    {{ $t("recruitPage.question2")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -294,7 +289,7 @@
                                     class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                                 >
                                     <p class="text-gray-500 font-medium">
-                                        英語は海外駐在員やローカルスタッフとの接客やコミュニケーションで利用します。ローカルスタッフとはビルマ語を話す機会もあります。
+                                        {{ $t("recruitPage.answer2")}}
                                     </p>
                                 </div>
                             </div>
@@ -305,7 +300,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    TOEICなど応募条件はありますか？
+                                    {{ $t("recruitPage.question3")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -325,7 +320,7 @@
                                     class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                                 >
                                     <p class="text-gray-500 font-medium">
-                                        3ヶ月以内の短期留学の場合、目安としてTOEIC800点程度の英語力があると幅広い業務への挑戦機会が提供できると考えています。6カ月など長期留学の場合はインターン当初の英語力は求めませんが、TOEIC600点はあることが望ましいです。
+                                        {{ $t("recruitPage.answer3")}}
                                     </p>
                                 </div>
                             </div>
@@ -336,7 +331,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    治安や衛生面は心配はないのでしょうか？
+                                    {{ $t("recruitPage.question4")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -356,7 +351,7 @@
                                     class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                                 >
                                     <p class="text-gray-500 font-medium">
-                                        2021年以降の軍事政権下で治安が心配されていますが、駐在員のルールを守り活動いただければ問題なく、過去40名以上のインターン受け入れにおいてトラブル・事故が発生したことはございません。衛生面においては外出時の飲食では注意が必要ですので駐在員の指示に従っていただきます。
+                                        {{ $t("recruitPage.answer4")}}
                                     </p>
                                 </div>
                             </div>
@@ -367,7 +362,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    駐在先はどちらになるのでしょうか？
+                                    {{ $t("recruitPage.question5")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -389,7 +384,7 @@
                                     <p
                                         class="text-gray-500 font-medium text-left"
                                     >
-                                        エクセが所有するサクラレジデンスに駐在いただきます。日本人駐在員も常駐しておりますので、困りごとがあればすぐに対応できる体制となっております。
+                                    {{ $t("recruitPage.answer5")}}
                                     </p>
                                 </div>
                             </div>
@@ -400,7 +395,7 @@
                                 class="flex justify-between items-center w-full py-4 border-b border-b-blue-gray-100 text-blue-gray-700 antialiased font-sans text-xl font-semibold leading-snug select-none hover:text-blue-gray-900 transition-colors"
                             >
                                 <p class="text-gray-700 font-medium">
-                                    インターン参加は必須でしょうか？
+                                    {{ $t("recruitPage.question6")}}
                                 </p>
                                 <span class="w-5 h-5 ml-4"
                                     ><svg
@@ -420,7 +415,7 @@
                                     class="block w-full py-4 text-gray-700 antialiased font-sans text-sm font-light leading-normal"
                                 >
                                     <p class="text-gray-500 font-medium">
-                                        旅行と異なり、ミャンマー現地に駐在する場合、生活習慣や文化、慣習などへの適用が大切です。インターン参加は必須ではありませんが、インターンに参加した後に本採用エントリーをすることをオススメしております。
+                                        {{ $t("recruitPage.answer6")}}
                                     </p>
                                 </div>
                             </div>
@@ -435,7 +430,7 @@
                                 data-mdb-ripple="true"
                                 data-mdb-ripple-color="light"
                             >
-                                応募する
+                            {{ $t("internshipPage.button")}}
                             </button></a
                         >
                     </div>
