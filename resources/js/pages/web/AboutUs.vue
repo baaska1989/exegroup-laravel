@@ -22,27 +22,25 @@
     <div class="max-w-[1200px] mx-auto">
         <div class="px-4 about-text">
             <p class="text-center text-lg font-medium text-gray-500 pt-6">
-                私ども、株式会社エクセは1991年8月6日に生まれました。
-                それから20年、20世紀の最後の10年と21世紀の最初の10年の激動の中をブティックの投資事業会社として、時代の流れとともに前へ前へと進んでまいりました。
+                {{ $t("aboutPage.short_desc") }}
             </p>
             <h2
                 class="text-center mt-8 underline underline-offset-4 font-bold text-2xl md:text-3xl text-gray-700 my-4"
             >
-                変化こそチャンスである
+            {{ $t("aboutPage.title1") }}
             </h2>
             <p class="text-center text-lg font-medium text-gray-500 mt-4">
-                当社が常に掲げてきた信念は、「変化こそチャンスである」ということです。<br /><br />時代の変化にたじろぐことなく、不安定化をむしろビジネスチャンスと捉えていくのが当社のスピリットです。そして投資にあたっては、真に社会が必要としているものは何なのかを見据え、世の中の大勢がなびく「今」に乗るのではなく、時代の「これから」を見つけ出してそこに投資をし、事業を起こし、更に育てていくことを基本的な方針としております。<br /><br />
-                この信念が結実したものが、ここでご紹介する国内及びアジアを中心とするプロジェクトです。当社は、ミャンマー、モンゴル、イスラエルなどで数多くのプロジェクトを完成・運営し、雇用を通じてこれらの国々のお手伝いをさせていただいております。
+                {{ $t("aboutPage.text1") }}<br /><br />{{ $t("aboutPage.text2") }}
             </p>
             <h2
                 class="text-center mt-8 underline underline-offset-4 font-bold text-2xl md:text-3xl text-gray-700 my-4"
             >
-                人材へのこだわり
+                {{$t("aboutPage.title2")}}
             </h2>
             <p class="text-center text-lg font-medium text-gray-500 mb-8">
-                当社が常に掲げてきた信念は、「変化こそチャンスである」ということです。<br /><br />当社は人材への投資こそ最高の投資であると考えて、「自ら変化を求める人材」、「人と同じではなく自分なりの価値観を持っている人材」を常に求めております。<br /><br />
-                安定した人生を求めるより、当社をステップに将来は独立して経営者を目指そうとするような人材を歓迎いたします。やる気のある若者を支援するために、当社は海外インターンシップを含めた実践研修の場も提供しております。<br /><br />
-                ユニークな投資事業会社として常に前進を続ける当社のことを是非知っていただき、応援していただきますようお願いいたします。
+                {{ $t("aboutPage.text4") }}<br /><br />{{ $t("aboutPage.text5") }}<br /><br />
+                {{ $t("aboutPage.text6") }}<br /><br />
+                {{ $t("aboutPage.text7") }}
             </p>
             <p class="text-end text-lg font-medium text-gray-500">
                 2017年9月吉日

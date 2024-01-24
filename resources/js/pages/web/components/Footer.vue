@@ -27,9 +27,7 @@
                             <li class="font-bold text-base">
                                 <font style="vertical-align: inherit"
                                     ><font style="vertical-align: inherit"
-                                        >5th floor, Quatre Saison Kojimachi,
-                                        4-8-19 Kojimachi, Chiyoda-ku, Tokyo
-                                        102-0083</font
+                                        >{{ $t("footer.address")}}</font
                                     ></font
                                 >
                             </li>
@@ -48,7 +46,7 @@
                                 ></path>
                             </svg>
                             <li class="font-bold text-base">
-                                (81) 3-3288-2371
+                                {{ $t("footer.phone")}}
                             </li>
                         </div>
                         <div class="flex mt-5">
@@ -70,7 +68,7 @@
                                     class="font-bold hover:text-blue-500 text-base sm:my-4 py-4"
                                     style="padding-bottom: 10px"
                                 >
-                                    info@exegroup.co.jp
+                                {{ $t("footer.email")}}
                                 </a>
                             </li>
                         </div>
@@ -82,7 +80,7 @@
                     <h2 class="mb-5 text-gray-300 text-base underline">
                         <font style="vertical-align: inherit"
                             ><font style="vertical-align: inherit"
-                                >About EXE</font
+                                >{{ $t("footer.about") }}</font
                             ></font
                         >
                     </h2>
@@ -94,7 +92,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >Company Profile</font
+                                            >{{ $t("footer.companyOverview") }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -108,7 +106,7 @@
                     <h2 class="underline mb-5 text-gray-300 text-base">
                         <font style="vertical-align: inherit"
                             ><font style="vertical-align: inherit"
-                                >project</font
+                                >{{ $t("footer.projects") }}</font
                             ></font
                         >
                     </h2>
@@ -119,7 +117,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >Overseas project</font
+                                            >{{ $t("footer.overseasProjects") }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -132,7 +130,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >-Myanmar&nbsp;
+                                            >{{ $t("footer.myanmar") }}&nbsp;
                                         </font></font
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
@@ -149,7 +147,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >-Mongolia
+                                            >{{ $t("footer.mongolia") }}
                                         </font></font
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
@@ -166,7 +164,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >domestic project</font
+                                            >{{ $t("footer.domesticProjects") }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -180,7 +178,7 @@
                     <h2 class="mb-5 text-gray-300 text-base underline">
                         <font style="vertical-align: inherit"
                             ><font style="vertical-align: inherit"
-                                >Internship/Recruitment</font
+                                > {{ $t("footer.inter") }}</font
                             ></font
                         >
                     </h2>
@@ -192,7 +190,7 @@
                                 ><span class=" "
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >internship</font
+                                            >{{ $t("footer.internship") }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -205,8 +203,7 @@
                                 ><span class=""
                                     ><font style="vertical-align: inherit"
                                         ><font style="vertical-align: inherit"
-                                            >New graduates/mid-career
-                                            recruitment</font
+                                            >{{ $t("footer.newGrad") }}</font
                                         ></font
                                     ></span
                                 ></a
@@ -227,6 +224,7 @@
                     ><div style="vertical-align: inherit"
                         >
                         {{ $t("footer.copyRight") }} 
+                        
                         </div
                     ></div
                 >

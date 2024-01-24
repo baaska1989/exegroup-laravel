@@ -16,11 +16,11 @@
                         <h2
                             class="font-semibold text-2xl md:text-3xl text-gray-800 pb-8"
                         >
-                            インターンシップ・採用情報
+                        {{ $t("recruitment.title")}}
                         </h2>
                     </div>
                     <p class="font-medium text-gray-800 text-lg">
-                        エクセはミャンマー、モンゴルでプロジェクトを運営しており、インターンシップ、新卒・中途採用も随時行っております。
+                        {{ $t("recruitment.text")}}
                     </p>
                     <button
                         class="px-14 mt-5 py-3 bg-darkblue text-white font-medium text-base leading-snug uppercase"
@@ -28,7 +28,7 @@
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
                     >
-                        詳細はこちら
+                    {{ $t("recruitment.button")}}
                     </button>
                 </div>
             </div>
@@ -48,12 +48,12 @@
                     <h2
                         class="text-2xl md:text-3xl font-semibold text-gray-700 text-center md:text-left"
                     >
-                        ミャンマープロジェクト
+                        {{$t("myanmarPage.head_title")}}
                     </h2>
                     <p
                         class="my-4 text-lg font-medium text-gray-500 text-justify"
                     >
-                        1999年より日本初となるオフィスビル・ホテル事業を展開しています。サクラタワーを所有し、海外駐在員向けアパートメントとなるサクラレジデンスの運営をしています。
+                        {{ $t("domestic.text1") }}
                     </p>
                     <div class="flex justify-center lg:justify-end">
                         <button
@@ -62,7 +62,7 @@
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
-                            詳細はこちら
+                        {{ $t("recruitment.button")}}
                         </button>
                     </div>
                 </div>
@@ -77,13 +77,12 @@
                     <h2
                         class="text-2xl md:text-3xl font-semibold text-gray-700 text-center md:text-left"
                     >
-                        モンゴルプロジェクト
+                        {{ $t("sharedhouse.title")}}
                     </h2>
                     <p
                         class="my-4 text-lg font-medium text-gray-500 text-justify"
                     >
-                        2010年に日本初の投資事業会社Sanaa EXE
-                        LLCを設立し、不動産投資事業、金融事業、教育事業を展開しています。エクセプラザ、Olonlog」スクールを運営しています。
+                    {{ $t("sharedhouse.text")}}
                     </p>
                     <div
                         class="flex justify-center md:justify-start align-text-bottom"
@@ -94,7 +93,7 @@
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
-                            詳細はこちら
+                        {{ $t("recruitment.button")}}
                         </button>
                     </div>
                 </div>
@@ -114,7 +113,7 @@
             <h2
                 class="font-bold flex text-2xl md:text-3xl mb-5 mt-5 lg:p-6 text-gray-700 justify-center"
             >
-                お知らせ
+                {{ $t("projects.bigtitle") }}
             </h2>
             <div class="flex justify-center pt-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
@@ -133,12 +132,12 @@
                         <h2
                             class="font-serif text-2xl md:text-3xl text-gray-700 font-bold"
                         >
-                            お知らせです！
+                        {{ $t("projects.title1") }}
                         </h2>
                         <p
                             class="font-medium mt-6 font-sans text-gray-500 max-w-2xl"
                         >
-                            ミャンマーを中心に医療、診断保険活動を行っている特定非営利活動法人ジャパンハートを継続的に支援しております。ジャパンハートの活動の詳細についてはWEBサイト．．．
+                        {{ $t("projects.text1") }}
                         </p>
                     </div>
                 </div>
