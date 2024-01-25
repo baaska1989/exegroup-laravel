@@ -78,26 +78,15 @@
                     class="font-bold max-w-lg mt-4 md:col-span-2 lg:col-span-2 pl-4 sm:mt-8 md:mt-8 lg:mt-8"
                 >
                     <h2 class="mb-5 text-gray-300 text-base underline">
-                        <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">{{
-                                $t("footer.about")
-                            }}</font></font
-                        >
+                        {{ $t("footer.about") }}
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
                         <li class="nav-item">
                             <a
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
                                 href="/about/"
-                                ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font
-                                            style="vertical-align: inherit"
-                                            >{{
-                                                $t("footer.companyOverview")
-                                            }}</font
-                                        ></font
-                                    ></span
+                                ><span class="">
+                                    {{ $t("footer.companyOverview") }}</span
                                 ></a
                             >
                         </li>
@@ -107,25 +96,14 @@
                     class="font-bold max-w-lg pl-4 mt-4 md:p-4 md:col-span-2 lg:col-span-2"
                 >
                     <h2 class="underline mb-5 text-gray-300 text-base">
-                        <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">{{
-                                $t("footer.projects")
-                            }}</font></font
-                        >
+                        {{ $t("footer.projects") }}
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
                         <li class="nav-item">
                             <a
                                 class="font-bold py-2 flex items-center text-base text-gray-300"
                                 ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font
-                                            style="vertical-align: inherit"
-                                            >{{
-                                                $t("footer.overseasProjects")
-                                            }}</font
-                                        ></font
-                                    ></span
+                                    >{{$t("footer.overseasProjects")}}</span
                                 ></a
                             >
                         </li>
@@ -133,33 +111,16 @@
                             <a
                                 class="font-bold ml-2 my-2 py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
                                 href="/myanmar/"
-                                ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >{{ $t("footer.myanmar") }}&nbsp;
-                                        </font></font
-                                    ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >_</font
-                                        ></font
-                                    ></span
-                                ></a
+                                ><span class="">
+                                    {{ $t("footer.myanmar") }}&nbsp;
+                                </span></a
                             >
                         </li>
                         <li class="nav-item">
                             <a
                                 class="font-bold ml-2 my-2 py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
                                 href="/mongolia/"
-                                ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >{{ $t("footer.mongolia") }}
-                                        </font></font
-                                    ><font style="vertical-align: inherit"
-                                        ><font style="vertical-align: inherit"
-                                            >_</font
-                                        ></font
-                                    ></span
+                                ><span class="">{{ $t("footer.mongolia") }}</span
                                 ></a
                             >
                         </li>
@@ -168,14 +129,7 @@
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
                                 href="/domestic/"
                                 ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font
-                                            style="vertical-align: inherit"
-                                            >{{
-                                                $t("footer.domesticProjects")
-                                            }}</font
-                                        ></font
-                                    ></span
+                                    >{{ $t("footer.domesticProjects") }}</span
                                 ></a
                             >
                         </li>
@@ -185,39 +139,26 @@
                     class="font-bold max-w-lg pl-4 mt-4 md:p-4 md:ml-2 sm:col-span-1 md:col-span-3 lg:col-span-2"
                 >
                     <h2 class="mb-5 text-gray-300 text-base underline">
-                        <font style="vertical-align: inherit"
-                            ><font style="vertical-align: inherit">
-                                {{ $t("footer.inter") }}</font
-                            ></font
-                        >
+
+                                {{ $t("footer.inter") }}
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/intership/"
+                                :to="{name: 'Internship'}"
                                 ><span class=" "
-                                    ><font style="vertical-align: inherit"
-                                        ><font
-                                            style="vertical-align: inherit"
-                                            >{{ $t("footer.internship") }}</font
-                                        ></font
-                                    ></span
-                                ></a
+                                    >{{ $t("footer.internship") }}</span
+                                ></RouterLink
                             >
                         </li>
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/recruit/"
+                                :to="{name: 'Recuriet'}"
                                 ><span class=""
-                                    ><font style="vertical-align: inherit"
-                                        ><font
-                                            style="vertical-align: inherit"
-                                            >{{ $t("footer.newGrad") }}</font
-                                        ></font
-                                    ></span
-                                ></a
+                                    >{{ $t("footer.newGrad") }}</span
+                                ></RouterLink
                             >
                         </li>
                     </ul>

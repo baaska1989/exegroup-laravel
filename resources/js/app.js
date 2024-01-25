@@ -18,6 +18,7 @@ import jp from "./locales/jp.js";
 
 const i18n = createI18n({
     fallbackLocale: "jp",
+    runtimeOnly: false,
     locale: localStorage.getItem("locale") ?? "jp",
     messages: {jp, en, cn},
     legacy: false

@@ -47,7 +47,7 @@ export default {
       "#0505 Sakura Tower, 339 Bogyoke Aung San Road, Kyauktada Township, Yangon, Myanmar",
     row3_23: "电话:  (951) 255 255",
     row3_fax: "传真:  (951) 255 258 /",
-    row3_24: "stowersales@myanmar.com.mm",
+    row3_24: "",  // {stowersales@myanmar.com.mm}
     row3_email: "E-mail: ",
     row3_25: "乌兰巴托办公室（蒙古）",
     row3_26:
@@ -477,7 +477,7 @@ export default {
     address:
       "5F Quatre Saisons Kojimachi, 4-8-19 Kojimachi, Chiyoda-ku, Tokyo 102-0083",
     phone: "(81) 3-3288-2371",
-    email: "info@exegroup.co.jp",
+    email: "", //info@exegroup.co.jp
     about: "About",
     companyOverview: "Company Overview",
     projects: "Projects",
