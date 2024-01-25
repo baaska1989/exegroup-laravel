@@ -25,11 +25,7 @@
                                 ></path>
                             </svg>
                             <li class="font-bold text-base">
-                                <font style="vertical-align: inherit"
-                                    ><font style="vertical-align: inherit">{{
-                                        $t("footer.address")
-                                    }}</font></font
-                                >
+                                {{ $t("footer.address") }}
                             </li>
                         </div>
                         <div class="flex mt-5">
@@ -82,12 +78,12 @@
                     </h2>
                     <ul class="text-gray-300 font-light list-none">
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/about/"
+                                :to="{name: 'AboutUs'}"
                                 ><span class="">
                                     {{ $t("footer.companyOverview") }}</span
-                                ></a
+                                ></RouterLink
                             >
                         </li>
                     </ul>
@@ -108,29 +104,29 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold ml-2 my-2 py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/myanmar/"
+                                :to="{name: 'Myanmar'}"
                                 ><span class="">
                                     {{ $t("footer.myanmar") }}&nbsp;
-                                </span></a
+                                </span></RouterLink
                             >
                         </li>
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold ml-2 my-2 py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/mongolia/"
+                                :to="{name: 'Mongolia'}"
                                 ><span class="">{{ $t("footer.mongolia") }}</span
-                                ></a
+                                ></RouterLink
                             >
                         </li>
                         <li class="nav-item">
-                            <a
+                            <RouterLink
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                href="/domestic/"
+                                :to="{name: 'Domestic'}"
                                 ><span class=""
                                     >{{ $t("footer.domesticProjects") }}</span
-                                ></a
+                                ></RouterLink
                             >
                         </li>
                     </ul>
