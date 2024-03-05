@@ -32,7 +32,7 @@
     </div>
     <div class="pb-4 max-w-[1200px] mx-auto">
         <div class="flex justify-center">
-            <div class="grid md:grid-cols-2">
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-2">
                 <div class="py-2 md:p-8">
                     <img
                         src="/assets/2.JPG"
@@ -52,14 +52,14 @@
                        {{ $t("aboutPage.short_desc") }}
                     </p>
                     <div class="flex justify-center lg:justify-end">
-                        <button
+                        <RouterLink :to="{name: 'AboutUs'}"
                             class="px-14 py-3 bg-darkblue text-white font-medium text-base leading-snug uppercase"
                             role="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
                             {{ $t('aboutExe.button') }}
-                        </button>
+                        </RouterLink>
                     </div>
                 </div>
             </div>

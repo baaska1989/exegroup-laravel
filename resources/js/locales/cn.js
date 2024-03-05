@@ -12,7 +12,7 @@ export default {
   slider3: " ",
   myanmar: "缅甸",
   mongolia: "蒙古",
-  recruit: "Recruit",
+  recruit: "招聘",
 
   aboutPage: {
     about: "关于 EXE",
@@ -47,7 +47,7 @@ export default {
       "#0505 Sakura Tower, 339 Bogyoke Aung San Road, Kyauktada Township, Yangon, Myanmar",
     row3_23: "电话:  (951) 255 255",
     row3_fax: "传真:  (951) 255 258 /",
-    row3_24: "",  // {stowersales@myanmar.com.mm}
+    row3_24: "stowersales@myanmar.com.mm",
     row3_email: "E-mail: ",
     row3_25: "乌兰巴托办公室（蒙古）",
     row3_26:
@@ -152,35 +152,35 @@ export default {
       "除了承销业务，绿松石金融还直接向当地企业法人发放贷款，并作为非银行部门金融市场的市场制造商发挥作用。",
   },
   aboutExe: {
-    title1: "About",
+    title1: "关于 EXE",
     text1:
-      "We, EXE Corporation, were born on August 6, 1991. Over the past 30 years, amid the tumultuous changes of the last decade of the 20th century and the first two decades of the 21st century, we have been steadily moving forward as a boutique investment company, keeping pace with the flow of the times.",
-    button: "More details here",
+      "本公司，株式会社 EXE 成立于 1991 年 8 月 6 日。在过去的 30 年中，即 20 世纪最后的 10 年和 21 世纪的前 20 年这一动荡时期，作为一家精品投资公司，我们一直与时俱进。",
+    button: "更多详情",
   },
   recruitment: {
-    title: "Internship & Recruitment Information",
-    text: "EXE Corporation operates projects in Myanmar and Mongolia and regularly offers internships as well as recruiting new graduates and mid-career employees.",
-    button: "More details here",
+    title: "实习生录用信息",
+    text: "EXE在缅甸、蒙古运营项目，经常录用实习生、应届毕业生和有工作经验的人士。",
+    button: "更多详情",
   },
   domestic: {
-    title1: "Myanmar Project",
+    title1: "缅甸项目",
     text1:
-      "Since 1999, we have been engaged in Japan's first office building and hotel business in Myanmar. We own Sakura Tower and operate Sakura Residence, an apartment for overseas residents.",
+      "自1999年起，我们一直在经营日本在缅甸的首家办公楼、酒店业务。我们拥有SAKURA Tower，同时运营面向驻外人员的公寓SAKURA Residence。",
     button: "",
   },
   sharedhouse: {
-    title: "Mongolia Project",
-    text: "In 2010, we established Japan's first investment company Sanaa EXE LLC in Mongolia, and have been expanding real estate investment, financial business, and educational business. ",
+    title: "蒙古项目",
+    text: "2010年，我们成立了蒙古首家日本投资业务公司Sanaa EXE LLC，经营不动产投资业务、金融业务、教育业务。我们运营着EXE Plaza、Olonlog学校。",
     button: "",
   },
   projects: {
-    bigtitle: "Announcements",
-    title1: "Announcement!",
+    bigtitle: "通知",
+    title1: "特此通知!",
     text1:
-      "We continue to support the Japan Heart, a specified nonprofit organization engaged in medical and diagnostic insurance activities mainly in Myanmar. For more details about Japan Heart's activities, please visit the website...",
-    title2: "Announcement!",
+      "我们一直在不断支持以缅甸为中心开展医疗、诊断保健活动的特定非营利活动法人Japan Heart。关于Japan Heart活动的详情，请参阅网站。",
+    title2: "特此通知!",
     text2:
-      "We continue to support the Japan Heart, a specified nonprofit organization engaged in medical and diagnostic insurance activities mainly in Myanmar. For more details about Japan Heart's activities, please visit the website...",
+      "我们一直在不断支持以缅甸为中心开展医疗、诊断保健活动的特定非营利活动法人Japan Heart。关于Japan Heart活动的详情，请参阅网站。",
   },
   domesticPage: {
     head_title: "不动产/投资业务",
@@ -473,24 +473,24 @@ export default {
       "与观光旅游不同的是，当您以实习生身份被外派至缅甸时，就需要了解并熟悉当地的各项事物，包括但不限于生活习惯、文化以及风俗。另外，虽然参加实习并非是正式招聘的必要前提，但依旧建议您在完成实习后参加我们的正式招聘。",
   },
   footer: {
-    contactUs: "Contact Us",
+    contactUs: "咨询",
     address:
       "5F Quatre Saisons Kojimachi, 4-8-19 Kojimachi, Chiyoda-ku, Tokyo 102-0083",
     phone: "(81) 3-3288-2371",
-    email: "", //info@exegroup.co.jp
-    about: "About",
-    companyOverview: "Company Overview",
-    projects: "Projects",
-    overseasProjects: "Overseas Projects",
-    myanmar: "Myanmar",
-    mongolia: "Mongolia",
-    domesticProjects: "Domestic Projects",
-    inter: "Internship & Recruitment",
-    internship: "Internship",
-    newGrad: "New Graduates & Mid-Career Recruitment",
+    email: "info@exegroup.co.jp",
+    about: "关于EXE",
+    companyOverview: "关于EXE",
+    projects: "项目",
+    overseasProjects: "海外项目",
+    myanmar: "缅甸",
+    mongolia: "蒙古",
+    domesticProjects: "国内项目",
+    inter: "实习/招聘",
+    internship: "实习",
+    newGrad: "应届毕业生・有工作经验人士的录用",
     copyRight: "Copyright © 2022 EXE Corporation. All Rights Reserved.",
   },
   contactPage: {
-    title: "Contact",
+    title: "咨询",
   },
 };

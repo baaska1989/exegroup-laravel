@@ -22,7 +22,7 @@
                     <p class="font-medium text-gray-800 text-lg">
                         {{ $t("recruitment.text")}}
                     </p>
-                    <button
+                    <button @click="$router.push('recruit')"
                         class="px-14 mt-5 py-3 bg-darkblue text-white font-medium text-base leading-snug uppercase"
                         role="button"
                         data-mdb-ripple="true"
@@ -56,14 +56,14 @@
                         {{ $t("domestic.text1") }}
                     </p>
                     <div class="flex justify-center lg:justify-end">
-                        <button
+                        <RouterLink :to="{name: 'Myanmar'}"
                             class="px-14 py-3 bg-darkblue text-white font-medium text-base leading-snug uppercase"
                             role="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
                         {{ $t("recruitment.button")}}
-                        </button>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -87,14 +87,14 @@
                     <div
                         class="flex justify-center md:justify-start align-text-bottom"
                     >
-                        <button
+                        <RouterLink :to="{name: 'Mongolia'}"
                             class="px-14 py-3 bg-darkblue text-white font-medium text-base leading-snug uppercase"
                             role="button"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
                         {{ $t("recruitment.button")}}
-                        </button>
+                        </RouterLink>
                     </div>
                 </div>
                 <div class="md:px-4 row-start-1 md:row-span-1">
@@ -171,6 +171,11 @@ export default {
         Introducting,
         Line,
         Dedicated,
+    },
+    mounted: {
+        toRecruit(){
+
+        }
     },
 
     // created() {

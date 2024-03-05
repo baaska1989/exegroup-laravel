@@ -151,7 +151,7 @@
                         <li class="nav-item">
                             <RouterLink
                                 class="font-bold py-2 flex items-center text-base text-gray-300 hover:text-sky-300"
-                                :to="{name: 'Recuriet'}"
+                                :to="{name: 'Recruit'}"
                                 ><span class=""
                                     >{{ $t("footer.newGrad") }}</span
                                 ></RouterLink
